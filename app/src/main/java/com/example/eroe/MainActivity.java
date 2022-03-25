@@ -12,5 +12,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         //안녕하세요~ 김종원
+        //송지호
     }
 }
