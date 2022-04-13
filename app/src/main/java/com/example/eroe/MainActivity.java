@@ -1,8 +1,12 @@
 package com.example.eroe;
 
+import android.os.Bundle;
+import android.view.ViewGroup;
+
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.os.Bundle;
+import net.daum.mf.map.api.MapView;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -11,8 +15,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //안녕하세요~
-        //송지호
-        //박성범22
+        MapView mapView = new MapView(this);
+
+        ViewGroup mapViewContainer = (ViewGroup) findViewById(R.id.map_view);
+        mapViewContainer.addView(mapView);
     }
 }
+
+//네이티브 키 값 : b9db38bdcbe294d8902eb53180f04402
