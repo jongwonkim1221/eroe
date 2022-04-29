@@ -48,6 +48,7 @@
         app:srcCompat="@drawable/notice"
         tools:ignore="MissingConstraints" />
 
+    <!--프로필 코드-->
     <ImageButton
         android:id="@+id/profile_bt"
         android:layout_width="30dp"
@@ -74,5 +75,93 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/logo_bt"
         app:layout_constraintVertical_bias="0.0" />
+
+    <!--QnA 코드-->
+
+    <!--구분선 코드-->
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="64dp"
+        android:layout_height="35dp"
+        android:background="@android:color/transparent"
+        android:scaleType="centerInside"
+        android:text="QnA"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/view2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        app:layout_constraintVertical_bias="0.555" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="411dp"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo_bt"
+        app:layout_constraintVertical_bias="0.081" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="411dp"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo_bt"
+        app:layout_constraintVertical_bias="0.163" />
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="411dp"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo_bt"
+        app:layout_constraintVertical_bias="0.241" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="411dp"
+        android:layout_height="54dp"
+        android:background="@android:color/transparent"
+        android:scaleType="centerInside"
+        android:text="   갑자기 동선이 파악이 안돼!"
+        android:textAlignment="textStart"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/view3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="411dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="52dp"
+        android:background="@android:color/transparent"
+        android:scaleType="centerInside"
+        android:text="   요금제가 궁금합니다."
+        android:textAlignment="textStart"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/view4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
