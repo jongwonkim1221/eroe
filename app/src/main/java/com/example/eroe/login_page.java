@@ -10,7 +10,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+public class login_page extends AppCompatActivity {
     ImageView menu_bt, notice_bt, profile_bt, logo_bt;
     EditText input_id, input_pw;
     TextView login_txt, id_txt, password_txt;
@@ -44,19 +44,19 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 switch (view.getId()) {
                     case R.id.menu_bt:
-                        i = new Intent(getApplicationContext(), menu.class).show();
+                        i = new Intent(getApplicationContext(), menu.class);
                         startActivity(i);
                         break;
                     case R.id.notice_bt:
-                        j = new Intent(getApplicationContext(), notice.class).show();
+                        j = new Intent(getApplicationContext(), notice.class);
                         startActivity(j);
                         break;
                     case R.id.profile_bt:
-                        k = new Intent(getApplicationContext(), profile.class).show();
+                        k = new Intent(getApplicationContext(), profile.class);
                         startActivity(k);
                         break;
                     case R.id.logo_bt:
-                        l = new Intent(getApplicationContext(), MainActivity.class).show();
+                        l = new Intent(getApplicationContext(), MainActivity.class);
                         startActivity(l);
                         break;
                 }

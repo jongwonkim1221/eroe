@@ -11,9 +11,13 @@
         android:layout_width="27dp"
         android:layout_height="24dp"
         android:scaleType="centerInside"
-        app:srcCompat="@drawable/menu"
-        tools:layout_editor_absoluteX="3dp"
-        tools:layout_editor_absoluteY="1dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/logo_bt"
+        app:layout_constraintHorizontal_bias="0.055"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.011"
+        app:srcCompat="@drawable/menu" />
 
     <ImageView
         android:id="@+id/notice_bt"
@@ -35,9 +39,10 @@
         android:id="@+id/logo_bt"
         android:layout_width="141dp"
         android:layout_height="31dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/eroe_logo"
-        tools:layout_editor_absoluteX="116dp"
-        tools:layout_editor_absoluteY="1dp" />
+        tools:layout_editor_absoluteY="8dp" />
 
     <TextView
         android:id="@+id/login_txt"
@@ -121,4 +126,5 @@
         android:text="회원가입"
         tools:layout_editor_absoluteX="33dp"
         tools:layout_editor_absoluteY="395dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
