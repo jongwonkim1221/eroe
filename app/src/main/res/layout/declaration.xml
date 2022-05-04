@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+<!--ee312-->
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="1dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="16dp"
+        android:background="@android:color/transparent"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@+id/view2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view2"
+        app:srcCompat="@drawable/menu2" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="93dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="132dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/view2"
+        app:layout_constraintStart_toEndOf="@+id/imageButton3"
+        app:layout_constraintTop_toTopOf="@+id/view2"
+        app:layout_constraintVertical_bias="0.416" />
+
+
+    <View
+        android:id="@+id/decelerate"
+        android:layout_width="323dp"
+        android:layout_height="341dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#00000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.465"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2"
+        app:layout_constraintVertical_bias="0.176"
+        />
+
+
+    <ImageButton
+        android:id="@+id/police_dec"
+        android:layout_width="323dp"
+        android:layout_height="163dp"
+        android:background="@android:color/transparent"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@+id/decelerate"
+        app:layout_constraintEnd_toEndOf="@+id/decelerate"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/decelerate"
+        app:layout_constraintTop_toTopOf="@+id/decelerate"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/police_dec" />
+
+    <ImageButton
+        android:id="@+id/embluance_dec"
+        android:layout_width="323dp"
+        android:layout_height="163dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/transparent"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@+id/decelerate"
+        app:layout_constraintEnd_toEndOf="@+id/police_dec"
+        app:layout_constraintStart_toStartOf="@+id/police_dec"
+        app:layout_constraintTop_toBottomOf="@+id/police_dec"
+        app:srcCompat="@drawable/embluance_dec" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
