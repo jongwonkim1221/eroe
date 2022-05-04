@@ -112,12 +112,48 @@
         android:id="@+id/input_msg"
         android:layout_width="372dp"
         android:layout_height="37dp"
-        android:background="@drawable/edge"
+        android:background="@drawable/round"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="   문의 내용"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="692dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="160dp"
+        android:layout_height="122dp"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/round"
+        android:text="\n안녕하세요! \n eroe입니다. \n 무엇을 도와드릴까요?"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="141dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="160dp"
+        android:layout_height="122dp"
+        android:layout_marginStart="232dp"
+        android:background="@drawable/round"
+        android:text="\n위치 추적이 가능한가요?"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="263dp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="160dp"
+        android:layout_height="122dp"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/round"
+        android:text="\n안녕하세요! \n eroe입니다. \n 네. 가능합니다."
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="393dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
