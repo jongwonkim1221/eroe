@@ -108,6 +108,21 @@
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="147dp" />
 
+    <EditText
+        android:id="@+id/input_id"
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:background="@drawable/edge"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/password_txt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_txt"
+        app:layout_constraintVertical_bias="0.0" />
+
     <TextView
         android:id="@+id/password_txt"
         android:layout_width="86dp"
@@ -133,44 +148,29 @@
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <EditText
-        android:id="@+id/input_id"
-        android:layout_width="350dp"
-        android:layout_height="45dp"
-        android:background="@drawable/edge"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text=""
-        app:layout_constraintBottom_toTopOf="@+id/password_txt"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.508"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/id_txt"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <Button
-        android:id="@+id/find_pw"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="204dp"
-        android:layout_marginBottom="16dp"
-        android:background="@android:color/transparent"
-        android:text="비밀번호 찾기"
-        app:layout_constraintBottom_toTopOf="@+id/login_bt"
-        app:layout_constraintEnd_toEndOf="parent" />
-
     <Button
         android:id="@+id/find_id"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="80dp"
+        android:layout_height="20dp"
         android:background="@android:color/transparent"
         android:text="아이디 찾기"
         app:layout_constraintBottom_toTopOf="@+id/login_bt"
         app:layout_constraintEnd_toStartOf="@+id/find_pw"
-        app:layout_constraintHorizontal_bias="0.967"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/input_pw"
-        app:layout_constraintVertical_bias="0.187" />
+        app:layout_constraintVertical_bias="0.142" />
+
+    <Button
+        android:id="@+id/find_pw"
+        android:layout_width="85dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="216dp"
+        android:layout_marginBottom="28dp"
+        android:background="@android:color/transparent"
+        android:text="비밀번호 찾기"
+        app:layout_constraintBottom_toTopOf="@+id/login_bt"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
         android:id="@+id/login_bt"
@@ -179,6 +179,7 @@
         android:background="@color/black"
         android:text="로그인"
         android:textColor="@color/white"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -192,6 +193,7 @@
         android:background="@drawable/edge"
         android:scaleType="centerInside"
         android:text="회원가입"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.508"
