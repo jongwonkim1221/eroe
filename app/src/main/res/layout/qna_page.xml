@@ -21,8 +21,10 @@
         app:layout_constraintHorizontal_bias="0.137"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.571"
         app:srcCompat="@drawable/menu" />
 
+    <!--eroe로고 코드-->
     <ImageButton
         android:id="@+id/logo_bt"
         android:layout_width="119dp"
@@ -36,10 +38,6 @@
         tools:ignore="MissingConstraints" />
 
     <!--알람 코드-->
-
-    <!--프로필 코드-->
-
-    <!--구분선 코드-->
     <ImageButton
         android:id="@+id/notice_bt"
         android:layout_width="30dp"
@@ -48,12 +46,12 @@
         android:scaleType="centerInside"
         app:layout_constraintBottom_toTopOf="@+id/view"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.543"
         app:layout_constraintStart_toEndOf="@+id/logo_bt"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/notice"
         tools:ignore="MissingConstraints" />
 
+    <!--프로필 코드-->
     <ImageButton
         android:id="@+id/profile_bt"
         android:layout_width="30dp"
@@ -63,12 +61,12 @@
         android:scaleType="centerInside"
         app:layout_constraintBottom_toTopOf="@+id/view"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/notice_bt"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/profile"
         tools:ignore="MissingConstraints" />
 
+    <!--구분선 코드-->
     <View
         android:id="@+id/view"
         android:layout_width="411dp"
@@ -114,6 +112,30 @@
         app:layout_constraintTop_toBottomOf="@+id/logo_bt"
         app:layout_constraintVertical_bias="0.081" />
 
+    <View
+        android:id="@+id/view3"
+        android:layout_width="411dp"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo_bt"
+        app:layout_constraintVertical_bias="0.163" />
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="411dp"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo_bt"
+        app:layout_constraintVertical_bias="0.241" />
+
     <Button
         android:id="@+id/button4"
         android:layout_width="411dp"
@@ -128,18 +150,6 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view2" />
-
-    <View
-        android:id="@+id/view3"
-        android:layout_width="411dp"
-        android:layout_height="1dp"
-        android:background="@color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logo_bt"
-        app:layout_constraintVertical_bias="0.163" />
 
     <Button
         android:id="@+id/button5"
@@ -156,17 +166,5 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view2" />
-
-    <View
-        android:id="@+id/view4"
-        android:layout_width="411dp"
-        android:layout_height="1dp"
-        android:background="@color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logo_bt"
-        app:layout_constraintVertical_bias="0.241" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
