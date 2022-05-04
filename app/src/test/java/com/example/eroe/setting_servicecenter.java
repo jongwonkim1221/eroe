@@ -8,7 +8,7 @@ public class setting_servicecenter extends setting_page{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.setting_servicecenter);
+        setContentView(R.layout.Service_center_page);
     }
 }
 

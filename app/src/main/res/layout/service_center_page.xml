@@ -2,187 +2,170 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
-<!--ee-->
+    android:layout_height="match_parent">
 
     <ImageButton
-        android:id="@+id/menu_bt5"
+        android:id="@+id/menu_bt3"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:background="@android:color/transparent"
         android:scaleType="centerInside"
-        app:layout_constraintBottom_toTopOf="@+id/view"
-        app:layout_constraintEnd_toStartOf="@+id/logo_bt"
-        app:layout_constraintHorizontal_bias="0.137"
+        app:layout_constraintBottom_toBottomOf="@+id/logo_bt3"
+        app:layout_constraintEnd_toStartOf="@+id/logo_bt3"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/menu" />
 
     <ImageButton
-        android:id="@+id/logo_bt5"
+        android:id="@+id/logo_bt3"
         android:layout_width="119dp"
         android:layout_height="58dp"
         android:background="@android:color/transparent"
         android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@+id/view9"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/logo"
         tools:ignore="MissingConstraints" />
 
     <ImageButton
-        android:id="@+id/notice_bt5"
+        android:id="@+id/notice_bt3"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="52dp"
         android:background="@android:color/transparent"
         android:scaleType="centerInside"
-        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintBottom_toBottomOf="@+id/logo_bt3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/logo_bt"
+        app:layout_constraintHorizontal_bias="0.525"
+        app:layout_constraintStart_toEndOf="@+id/logo_bt3"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/notice"
         tools:ignore="MissingConstraints" />
 
     <ImageButton
-        android:id="@+id/profile_bt5"
+        android:id="@+id/profile_bt3"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:background="@android:color/transparent"
         android:scaleType="centerInside"
-        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintBottom_toBottomOf="@+id/logo_bt3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/notice_bt"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/notice_bt3"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/profile"
         tools:ignore="MissingConstraints" />
 
     <View
-        android:id="@+id/view11"
+        android:id="@+id/view9"
         android:layout_width="411dp"
         android:layout_height="1dp"
         android:layout_marginBottom="672dp"
         android:background="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logo_bt"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
 
-    <Button
-        android:id="@+id/setting"
-        android:layout_width="match_parent"
-        android:layout_height="54dp"
-        android:layout_marginBottom="616dp"
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="84dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="4dp"
         android:background="@android:color/transparent"
-        android:text="  설정"
-        android:textAlignment="textStart"
+        android:scaleType="centerInside"
+        android:text="고객센터"
+        android:textAlignment="center"
+        android:textColor="@color/black"
         android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="72dp" />
+
+    <View
+        android:id="@+id/view15"
+        android:layout_width="411dp"
+        android:layout_height="1dp"
+        android:layout_marginBottom="616dp"
+        android:background="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/view11" />
-
-    <View
-        android:id="@+id/view4"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@color/black"
-        app:layout_constraintTop_toBottomOf="@+id/setting"
-        tools:layout_editor_absoluteX="0dp" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/setting_notice"
-        android:layout_width="match_parent"
+        android:id="@+id/button3"
+        android:layout_width="411dp"
         android:layout_height="54dp"
         android:background="@android:color/transparent"
-        android:text="  공지사항"
+        android:scaleType="centerInside"
+        android:text="   QnA"
+        android:textAlignment="textStart"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="115dp" />
+
+    <View
+        android:id="@+id/view16"
+        android:layout_width="411dp"
+        android:layout_height="1dp"
+        android:layout_marginBottom="560dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="411dp"
+        android:layout_height="54dp"
+        android:background="@android:color/transparent"
+        android:scaleType="centerInside"
+        android:text="   1:1문의"
         android:textAlignment="textStart"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view4" />
+        tools:layout_editor_absoluteY="171dp" />
 
     <View
-        android:id="@+id/view5"
-        android:layout_width="match_parent"
+        android:id="@+id/view17"
+        android:layout_width="411dp"
         android:layout_height="1dp"
+        android:layout_marginBottom="504dp"
         android:background="@color/black"
-        app:layout_constraintTop_toBottomOf="@+id/setting_notice"
-        tools:layout_editor_absoluteX="0dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/version_info"
-        android:layout_width="match_parent"
+        android:id="@+id/button7"
+        android:layout_width="411dp"
         android:layout_height="54dp"
-        android:background="@android:color/transparent"
-        android:text="  버전정보"
+        android:background="@android:color/black"
+        android:textColor="@color/white"
+        android:scaleType="centerInside"
+        android:text="   고객센터                                        1688-XXXX"
         android:textAlignment="textStart"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/setting_notice" />
-
-    <View
-        android:id="@+id/view6"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@color/black"
-        app:layout_constraintTop_toBottomOf="@+id/version_info"
-        tools:layout_editor_absoluteX="0dp" />
-
-    <Switch
-        android:id="@+id/switch1"
-        android:layout_width="match_parent"
-        android:layout_height="54dp"
-        android:text="  알람설정"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/version_info" />
-
-    <View
-        android:id="@+id/view7"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@color/black"
-        app:layout_constraintTop_toBottomOf="@+id/switch1"
-        tools:layout_editor_absoluteX="0dp" />
-
-    <Button
-        android:id="@+id/service_center"
-        android:layout_width="match_parent"
-        android:layout_height="54dp"
-        android:background="@android:color/transparent"
-        android:text="  고객센터"
-        android:textAlignment="textStart"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/switch1" />
-
-    <View
-        android:id="@+id/view8"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_marginEnd="8dp"
-        android:background="@color/black"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/service_center" />
-
+        tools:layout_editor_absoluteY="282dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
