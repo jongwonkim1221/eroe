@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageButton
+        android:id="@+id/logo_bt12"
+        tools:ignore="MissingConstraints"
+        android:layout_width="119dp"
+        android:layout_height="58dp"
+        android:background="@android:color/transparent"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <ImageButton
+        android:id="@+id/notice_bt12"
+        tools:ignore="MissingConstraints"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="44dp"
+        android:background="@android:color/transparent"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/logo_bt"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/notice" />
+
+    <ImageButton
+        android:id="@+id/profile_bt12"
+        tools:ignore="MissingConstraints"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="12dp"
+        android:background="@android:color/transparent"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/notice_bt"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/profile" />
+
+    <ImageButton
+        android:id="@+id/menu_bt12"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/transparent"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintEnd_toStartOf="@+id/logo_bt"
+        app:layout_constraintHorizontal_bias="0.137"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.571"
+        app:srcCompat="@drawable/menu" />
+
+    <View
+        android:id="@+id/view28"
+        android:layout_width="411dp"
+        android:layout_height="1dp"
+        android:layout_marginBottom="672dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo_bt"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ScrollView
+        android:layout_width="411dp"
+        android:layout_height="672dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/logo_bt12"
+        app:layout_constraintVertical_bias="1.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/modify_txt6"
+                android:layout_width="86dp"
+                android:layout_height="28dp"
+                android:text="회원 가입"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="14dp" />
+
+            <TextView
+                android:id="@+id/name_txt3"
+                android:layout_width="60dp"
+                android:layout_height="27dp"
+                android:text="아이디"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                tools:layout_editor_absoluteX="31dp"
+                tools:layout_editor_absoluteY="50dp" />
+
+            <EditText
+                android:id="@+id/name_editxt3"
+                android:layout_width="350dp"
+                android:layout_height="45dp"
+                android:background="@drawable/edge"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text=""
+                tools:layout_editor_absoluteX="31dp"
+                tools:layout_editor_absoluteY="77dp" />
+
+            <Button
+                android:id="@+id/button20"
+                android:layout_width="100dp"
+                android:layout_height="45dp"
+                android:background="@color/black"
+                android:text="중복확인"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                tools:layout_editor_absoluteX="281dp"
+                tools:layout_editor_absoluteY="77dp" />
+
+            <TextView
+                android:id="@+id/birth_txt4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="비밀번호"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                tools:layout_editor_absoluteX="31dp"
+                tools:layout_editor_absoluteY="122dp" />
+
+            <EditText
+                android:id="@+id/birth_editext4"
+                android:layout_width="350dp"
+                android:layout_height="45dp"
+                android:background="@drawable/edge"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text=""
+                tools:layout_editor_absoluteX="31dp"
+                tools:layout_editor_absoluteY="149dp" />
+
+            <TextView
+                android:id="@+id/gender_txt4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="비밀번호 확인"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                tools:layout_editor_absoluteX="31dp"
+                tools:layout_editor_absoluteY="194dp" />
+
+            <EditText
+                android:id="@+id/editTextTextPersonName10"
+                android:layout_width="350dp"
+                android:layout_height="45dp"
+                android:background="@drawable/edge"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text=""
+                tools:layout_editor_absoluteX="30dp"
+                tools:layout_editor_absoluteY="221dp" />
+
+            <TextView
+                android:id="@+id/phonenumber_text4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="이름"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                tools:layout_editor_absoluteX="30dp"
+                tools:layout_editor_absoluteY="266dp" />
+
+            <EditText
+                android:id="@+id/editTextTextPersonName11"
+                android:layout_width="350dp"
+                android:layout_height="45dp"
+                android:background="@drawable/edge"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text=""
+                tools:layout_editor_absoluteX="31dp"
+                tools:layout_editor_absoluteY="293dp" />
+
+            <TextView
+                android:id="@+id/address_txt4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="생년 월일"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                tools:layout_editor_absoluteX="31dp"
+                tools:layout_editor_absoluteY="338dp" />
+
+            <EditText
+                android:id="@+id/editTextTextPersonName12"
+                android:layout_width="175dp"
+                android:layout_height="46dp"
+                android:background="@drawable/edge"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text=""
+                tools:layout_editor_absoluteX="31dp"
+                tools:layout_editor_absoluteY="365dp" />
+
+            <TextView
+                android:id="@+id/address_txt5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="성별"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                tools:layout_editor_absoluteX="206dp"
+                tools:layout_editor_absoluteY="338dp" />
+
+            <TextView
+                android:id="@+id/address_txt6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="전화번호"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                tools:layout_editor_absoluteX="31dp"
+                tools:layout_editor_absoluteY="411dp" />
+
+            <TextView
+                android:id="@+id/address_txt7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="이메일"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                tools:layout_editor_absoluteX="31dp"
+                tools:layout_editor_absoluteY="482dp" />
+
+            <TextView
+                android:id="@+id/address_txt8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="주소"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                tools:layout_editor_absoluteX="30dp"
+                tools:layout_editor_absoluteY="554dp" />
+
+            <EditText
+                android:id="@+id/editTextTextPersonName13"
+                android:layout_width="350dp"
+                android:layout_height="45dp"
+                android:background="@drawable/edge"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text=""
+                tools:layout_editor_absoluteX="31dp"
+                tools:layout_editor_absoluteY="438dp" />
+
+            <EditText
+                android:id="@+id/editTextTextPersonName14"
+                android:layout_width="350dp"
+                android:layout_height="45dp"
+                android:background="@drawable/edge"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text=""
+                tools:layout_editor_absoluteX="31dp"
+                tools:layout_editor_absoluteY="509dp" />
+
+            <EditText
+                android:id="@+id/editTextTextPersonName15"
+                android:layout_width="350dp"
+                android:layout_height="45dp"
+                android:background="@drawable/edge"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text=""
+                tools:layout_editor_absoluteX="31dp"
+                tools:layout_editor_absoluteY="581dp" />
+
+            <Button
+                android:id="@+id/button18"
+                android:layout_width="350dp"
+                android:layout_height="45dp"
+                android:background="@color/black"
+                android:text="회원 가입"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.508"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="647dp" />
+
+            <RadioGroup
+                android:layout_width="175dp"
+                android:layout_height="46dp"
+                android:orientation="horizontal"
+                android:background="@drawable/edge"
+                tools:layout_editor_absoluteX="206dp"
+                tools:layout_editor_absoluteY="365dp">
+
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    android:layout_width="87dp"
+                    android:layout_height="46dp"
+                    android:text="남자" />
+
+                <RadioButton
+                    android:id="@+id/radioButton"
+                    android:layout_width="87dp"
+                    android:layout_height="46dp"
+                    android:text="여자" />
+
+            </RadioGroup>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
