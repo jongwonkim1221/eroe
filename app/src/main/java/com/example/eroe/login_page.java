@@ -16,7 +16,7 @@ public class login_page extends AppCompatActivity {
     TextView login_txt, id_txt, password_txt;
     Button find_id, find_pw, login_bt, signup_bt;
     View.OnClickListener cl;
-    Intent i, j, k, l;
+    Intent i, j, k, l,a;
 
 
     @Override
@@ -58,6 +58,10 @@ public class login_page extends AppCompatActivity {
                     case R.id.logo_bt:
                         l = new Intent(getApplicationContext(), MainActivity.class);
                         startActivity(l);
+                        break;
+                    case R.id.signup_bt:
+                        l = new Intent(getApplicationContext(), join_membership_page.class);
+                        startActivity(a);
                         break;
                 }
 
