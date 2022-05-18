@@ -73,7 +73,7 @@ public class join_membership_page extends AppCompatActivity {
                         startActivity(k);
                         break;
                     case R.id.menu_bt:
-                        l = new Intent(getApplicationContext(), menu.class);
+                        l = new Intent(getApplicationContext(), menu_page.class);
                         startActivity(l);
                         break;
                     case R.id.check_bt:

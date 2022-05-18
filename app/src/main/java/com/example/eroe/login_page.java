@@ -44,7 +44,7 @@ public class login_page extends AppCompatActivity {
             public void onClick(View view) {
                 switch (view.getId()) {
                     case R.id.menu_bt:
-                        i = new Intent(getApplicationContext(), menu.class);
+                        i = new Intent(getApplicationContext(), menu_page.class);
                         startActivity(i);
                         break;
                     case R.id.notice_bt:
@@ -52,7 +52,7 @@ public class login_page extends AppCompatActivity {
                         startActivity(j);
                         break;
                     case R.id.profile_bt:
-                        k = new Intent(getApplicationContext(), profile.class);
+                        k = new Intent(getApplicationContext(), my_page.class);
                         startActivity(k);
                         break;
                     case R.id.logo_bt:
