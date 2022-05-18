@@ -1,4 +1,4 @@
 package com.example.eroe;
 
-public class profile {
+public class inquiry_page {
 }

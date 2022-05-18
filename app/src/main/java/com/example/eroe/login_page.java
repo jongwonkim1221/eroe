@@ -48,7 +48,7 @@ public class login_page extends AppCompatActivity {
                         startActivity(i);
                         break;
                     case R.id.notice_bt:
-                        j = new Intent(getApplicationContext(), notice.class);
+                        j = new Intent(getApplicationContext(), notice_page.class);
                         startActivity(j);
                         break;
                     case R.id.profile_bt:
