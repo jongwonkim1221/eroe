@@ -4,7 +4,12 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/412-06/AndroidStudioProjects/eroe/app/src/main/res/layout/activity_main.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/412-06/AndroidStudioProjects/eroe/app/src/main/res/layout/anq_anq1_page.xml" value="0.3614583333333333" />
+        <entry key="..\:/Users/412-06/AndroidStudioProjects/eroe/app/src/main/res/layout/anq_anq2_page.xml" value="0.3614583333333333" />
+        <entry key="..\:/Users/412-06/AndroidStudioProjects/eroe/app/src/main/res/layout/declaration_page.xml" value="0.3614583333333333" />
         <entry key="..\:/Users/412-06/AndroidStudioProjects/eroe/app/src/main/res/layout/login_page.xml" value="0.5" />
+        <entry key="..\:/Users/412-06/AndroidStudioProjects/eroe/app/src/main/res/layout/notice_page.xml" value="0.3614583333333333" />
+        <entry key="..\:/Users/412-06/AndroidStudioProjects/eroe/app/src/main/res/layout/qna_page.xml" value="0.3614583333333333" />
         <entry key="..\:/Users/412-06/AndroidStudioProjects/eroe/app/src/main/res/layout/sample.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/412-06/AndroidStudioProjects/eroe/app/src/main/res/xml/network_security_config.xml" value="0.3515625" />
         <entry key="..\:/Users/412-07/AndroidStudioProjects/eroe/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2985" />

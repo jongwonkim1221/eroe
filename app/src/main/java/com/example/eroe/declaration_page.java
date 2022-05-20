@@ -1,6 +1,7 @@
 package com.example.eroe;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
@@ -11,7 +12,7 @@ public class declaration_page extends AppCompatActivity {
 
     ImageButton logo_bt, notice_bt, profile_bt, menu_bt, police_dec, embluance_dec;
     View.OnClickListener cl;
-    Intent i, j, k, l, m, n;
+    Intent i, j, k, l;
 
 
     @Override
@@ -48,12 +49,12 @@ public class declaration_page extends AppCompatActivity {
                         startActivity(l);
                         break;
                     case R.id.police_dec:
-                        m = new Intent(getApplicationContext(), menu_page.class);
-                        startActivity(l);
+                        Intent pIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("tel:112"));
+                        startActivity(pIntent);
                         break;
                     case R.id.embluance_dec:
-                        n = new Intent(getApplicationContext(), menu_page.class);
-                        startActivity(l);
+                        Intent eIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("tel:119"));
+                        startActivity(eIntent);
                         break;
                 }
             }
