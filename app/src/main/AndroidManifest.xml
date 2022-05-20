@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.eroe">
 
+    <!--지도 관련 퍼미션-->
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
@@ -25,6 +26,35 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".my_page">
+
+        </activity>
+
+        <activity android:name=".notice_page">
+
+        </activity>
+
+        <activity android:name=".qna_page">
+
+        </activity>
+
+        <activity android:name=".declaration_page">
+
+        </activity>
+
+        <activity android:name=".join_membership_page">
+
+        </activity>
+
+        <activity android:name=".login_page">
+
+        </activity>
+
+        <activity android:name=".setting_page">
+
+        </activity>
+
         <meta-data android:name="com.kakao.sdk.AppKey" android:value="b9db38bdcbe294d8902eb53180f04402"/>
 
 

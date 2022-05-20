@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -15,7 +16,7 @@ public class my_page extends AppCompatActivity {
     Button modify_bt, logout_bt;
     TextView parent_txt;
     View.OnClickListener cl;
-    Intent i, j, k, l;
+    Intent i, j, k, l, m, n;
 
 
     @Override
@@ -52,6 +53,15 @@ public class my_page extends AppCompatActivity {
                     case R.id.menu_bt:
                         l = new Intent(getApplicationContext(), menu_page.class);
                         startActivity(l);
+                        break;
+                    case R.id.modify_bt:
+                        m = new Intent(getApplicationContext(), user_info_modify_page.class);
+                        startActivity(m);
+                        break;
+                    case R.id.logout_bt:
+                        n = new Intent(getApplicationContext(),login_page.class);
+                        startActivity(n);
+                        Toast.makeText(getApplicationContext(), "로그아웃 되었습니다.", Toast.LENGTH_LONG).show();
                         break;
                 }
             }
