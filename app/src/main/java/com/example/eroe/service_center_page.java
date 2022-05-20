@@ -1,6 +1,7 @@
 package com.example.eroe;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -62,8 +63,8 @@ public class service_center_page extends AppCompatActivity {
                         startActivity(n);
                         break;
                     case R.id.call_bt:
-
-
+                        Intent cIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("tel:02-1688-0000"));
+                        startActivity(cIntent);
                 }
             }
         };

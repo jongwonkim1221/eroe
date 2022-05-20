@@ -9,7 +9,7 @@
 <!--ee-->
 
     <ImageButton
-        android:id="@+id/menu_bt5"
+        android:id="@+id/menu_bt"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginStart="16dp"
@@ -24,7 +24,7 @@
         app:srcCompat="@drawable/menu" />
 
     <ImageButton
-        android:id="@+id/logo_bt5"
+        android:id="@+id/logo_bt"
         android:layout_width="119dp"
         android:layout_height="58dp"
         android:background="@android:color/transparent"
@@ -36,7 +36,7 @@
         tools:ignore="MissingConstraints" />
 
     <ImageButton
-        android:id="@+id/notice_bt5"
+        android:id="@+id/notice_bt"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginTop="16dp"
@@ -51,14 +51,13 @@
         tools:ignore="MissingConstraints" />
 
     <ImageButton
-        android:id="@+id/profile_bt5"
+        android:id="@+id/profile_bt"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:background="@android:color/transparent"
         android:scaleType="centerInside"
-        app:layout_constraintBottom_toTopOf="@+id/view"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/notice_bt"
         app:layout_constraintTop_toTopOf="parent"
@@ -66,7 +65,7 @@
         tools:ignore="MissingConstraints" />
 
     <View
-        android:id="@+id/view11"
+        android:id="@+id/view1"
         android:layout_width="411dp"
         android:layout_height="1dp"
         android:layout_marginBottom="672dp"
@@ -91,10 +90,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/view11" />
+        app:layout_constraintTop_toTopOf="@+id/view1" />
 
     <View
-        android:id="@+id/view4"
+        android:id="@+id/view2"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="@color/black"
@@ -112,10 +111,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view4" />
+        app:layout_constraintTop_toBottomOf="@+id/view2" />
 
     <View
-        android:id="@+id/view5"
+        android:id="@+id/view3"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="@color/black"
@@ -136,7 +135,7 @@
         app:layout_constraintTop_toBottomOf="@+id/setting_notice" />
 
     <View
-        android:id="@+id/view6"
+        android:id="@+id/view4"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="@color/black"
@@ -155,7 +154,7 @@
         app:layout_constraintTop_toBottomOf="@+id/version_info" />
 
     <View
-        android:id="@+id/view7"
+        android:id="@+id/view5"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="@color/black"
@@ -176,7 +175,7 @@
         app:layout_constraintTop_toBottomOf="@+id/switch1" />
 
     <View
-        android:id="@+id/view8"
+        android:id="@+id/view6"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:layout_marginEnd="8dp"
