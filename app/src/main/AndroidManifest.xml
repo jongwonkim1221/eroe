@@ -19,6 +19,7 @@
         <activity
             android:name=".MainActivity"
             android:exported="true">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -55,6 +56,8 @@
         </activity>
 
         <meta-data android:name="com.kakao.sdk.AppKey" android:value="b9db38bdcbe294d8902eb53180f04402"/>
+
+
     </application>
 
 </manifest>

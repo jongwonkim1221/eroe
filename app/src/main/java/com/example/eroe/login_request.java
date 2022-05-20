@@ -78,4 +78,5 @@ public class user_add_page extends AppCompatActivity {
         menu_bt.setOnClickListener(cl);
         storage_bt.setOnClickListener(cl);
     }
+public class login_request {
 }
