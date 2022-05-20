@@ -6,15 +6,15 @@
     android:layout_height="match_parent">
 
     <ImageButton
-        android:id="@+id/menu_bt3"
+        android:id="@+id/menu_bt"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:background="@android:color/transparent"
         android:scaleType="centerInside"
-        app:layout_constraintBottom_toBottomOf="@+id/logo_bt3"
-        app:layout_constraintEnd_toStartOf="@+id/logo_bt3"
+        app:layout_constraintBottom_toBottomOf="@+id/logo_bt"
+        app:layout_constraintEnd_toStartOf="@+id/logo_bt"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -22,7 +22,7 @@
         app:srcCompat="@drawable/menu" />
 
     <ImageButton
-        android:id="@+id/logo_bt3"
+        android:id="@+id/logo_bt"
         android:layout_width="119dp"
         android:layout_height="58dp"
         android:background="@android:color/transparent"
@@ -36,40 +36,40 @@
         tools:ignore="MissingConstraints" />
 
     <ImageButton
-        android:id="@+id/notice_bt3"
+        android:id="@+id/notice_bt"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginTop="16dp"
         android:background="@android:color/transparent"
         android:scaleType="centerInside"
-        app:layout_constraintBottom_toBottomOf="@+id/logo_bt3"
+        app:layout_constraintBottom_toBottomOf="@+id/logo_bt"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.525"
-        app:layout_constraintStart_toEndOf="@+id/logo_bt3"
+        app:layout_constraintStart_toEndOf="@+id/logo_bt"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/notice"
         tools:ignore="MissingConstraints" />
 
     <ImageButton
-        android:id="@+id/profile_bt3"
+        android:id="@+id/profile_bt"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:background="@android:color/transparent"
         android:scaleType="centerInside"
-        app:layout_constraintBottom_toBottomOf="@+id/logo_bt3"
+        app:layout_constraintBottom_toBottomOf="@+id/logo_bt"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/notice_bt3"
+        app:layout_constraintStart_toEndOf="@+id/notice_bt"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/profile"
         tools:ignore="MissingConstraints" />
 
     <View
-        android:id="@+id/view9"
+        android:id="@+id/view"
         android:layout_width="411dp"
         android:layout_height="1dp"
         android:layout_marginBottom="672dp"
@@ -80,7 +80,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/customer_txt"
         android:layout_width="87dp"
         android:layout_height="23dp"
         android:layout_marginStart="4dp"
@@ -94,7 +94,7 @@
         tools:layout_editor_absoluteY="75dp" />
 
     <View
-        android:id="@+id/view15"
+        android:id="@+id/view1"
         android:layout_width="411dp"
         android:layout_height="1dp"
         android:layout_marginBottom="616dp"
@@ -105,7 +105,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/qna_bt"
         android:layout_width="411dp"
         android:layout_height="54dp"
         android:background="@android:color/transparent"
@@ -120,7 +120,7 @@
         tools:layout_editor_absoluteY="114dp" />
 
     <View
-        android:id="@+id/view16"
+        android:id="@+id/view2"
         android:layout_width="411dp"
         android:layout_height="1dp"
         android:layout_marginBottom="504dp"
@@ -131,7 +131,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/inquiry_bt"
         android:layout_width="411dp"
         android:layout_height="54dp"
         android:background="@android:color/transparent"
@@ -145,7 +145,7 @@
         tools:layout_editor_absoluteY="171dp" />
 
     <View
-        android:id="@+id/view17"
+        android:id="@+id/view3"
         android:layout_width="411dp"
         android:layout_height="1dp"
         android:layout_marginBottom="560dp"
@@ -156,7 +156,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/call_bt"
         android:layout_width="411dp"
         android:layout_height="54dp"
         android:background="@android:color/black"
