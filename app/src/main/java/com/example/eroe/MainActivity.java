@@ -19,7 +19,11 @@ public class MainActivity extends AppCompatActivity {
 
         ViewGroup mapViewContainer = (ViewGroup) findViewById(R.id.map_view);
         mapViewContainer.addView(mapView);
+
+
     }
 }
+
+
 
 //네이티브 키 값 : b9db38bdcbe294d8902eb53180f04402
