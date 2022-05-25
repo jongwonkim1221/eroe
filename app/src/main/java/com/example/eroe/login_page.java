@@ -57,7 +57,7 @@ public class login_page extends AppCompatActivity {
         signup_bt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), join_membership_page.class);
+                Intent intent = new Intent(getApplicationContext(), register.class);
                 startActivity(intent);
             }
         });

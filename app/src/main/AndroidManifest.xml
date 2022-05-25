@@ -36,7 +36,6 @@
         <activity android:name=".notice_page"></activity>
         <activity android:name=".qna_page"></activity>
         <activity android:name=".declaration_page"></activity>
-        <activity android:name=".join_membership_page"></activity>
         <activity android:name=".login_page"></activity>
         <activity android:name=".setting_page"></activity>
         <activity android:name=".inquiry_page"></activity>
@@ -45,7 +44,8 @@
         <activity android:name=".module_search_page"></activity>
         <activity android:name=".user_info_modify_page"></activity>
         <activity android:name=".user_info_page"></activity>
-        <activity android:name=".declaration_page"></activity>
+        <activity android:name=".register"></activity>
+
 
         <meta-data android:name="com.kakao.sdk.AppKey" android:value="b9db38bdcbe294d8902eb53180f04402"/>
 
