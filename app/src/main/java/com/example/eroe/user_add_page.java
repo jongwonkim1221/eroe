@@ -12,6 +12,8 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.namespace.R;
+
 public class user_add_page extends AppCompatActivity {
 
     ImageButton logo_bt, notice_bt, profile_bt, menu_bt;
@@ -36,7 +38,7 @@ public class user_add_page extends AppCompatActivity {
         birth_txt = (TextView) findViewById(R.id.birth_txt);
         gender_txt = (TextView) findViewById(R.id.gender_txt);
         phonenum_txt = (TextView) findViewById(R.id.phonenum_txt);
-        address_txt = (TextView) findViewById(R.id.phonenum_txt);
+        address_txt = (TextView) findViewById(R.id.address_editxt);
         name_editxt = (EditText) findViewById(R.id.name_editxt);
         birth_editxt = (EditText) findViewById(R.id.birth_editxt);
         phonenum_editxt = (EditText) findViewById(R.id.phonenum_editxt);
@@ -71,12 +73,10 @@ public class user_add_page extends AppCompatActivity {
                 }
             }
         };
-
         logo_bt.setOnClickListener(cl);
         notice_bt.setOnClickListener(cl);
         profile_bt.setOnClickListener(cl);
         menu_bt.setOnClickListener(cl);
         storage_bt.setOnClickListener(cl);
     }
-public class login_request {
 }
