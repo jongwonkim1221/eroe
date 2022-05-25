@@ -1,14 +1,26 @@
 package com.example.eroe;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.util.Log;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
+import androidx.appcompat.app.AppCompatActivity;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.toolbox.Volley;
+import com.example.namespace.R;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
+
 
 public class login_page extends AppCompatActivity {
     ImageView menu_bt, notice_bt, profile_bt, logo_bt;
@@ -16,7 +28,9 @@ public class login_page extends AppCompatActivity {
     TextView login_txt, id_txt, password_txt;
     Button find_id, find_pw, login_bt, signup_bt;
     View.OnClickListener cl;
-    Intent i, j, k, l,a;
+    Intent i, j, k, l,a,m;
+
+
 
 
     @Override
@@ -39,43 +53,115 @@ public class login_page extends AppCompatActivity {
         login_bt = (Button) findViewById(R.id.login_bt);
         signup_bt = (Button) findViewById(R.id.signup_bt);
 
-        cl = new View.OnClickListener() {
+
+
+        // 회원가입 버튼을 클릭 시 수행
+        signup_bt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                switch (view.getId()) {
-                    case R.id.menu_bt:
-                        i = new Intent(getApplicationContext(), menu_page.class);
-                        startActivity(i);
-                        break;
-                    case R.id.notice_bt:
-                        j = new Intent(getApplicationContext(), notice_page.class);
-                        startActivity(j);
-                        break;
-                    case R.id.profile_bt:
-                        k = new Intent(getApplicationContext(), my_page.class);
-                        startActivity(k);
-                        break;
-                    case R.id.logo_bt:
-                        l = new Intent(getApplicationContext(), MainActivity.class);
-                        startActivity(l);
-                        break;
-                    case R.id.signup_bt:
-                        l = new Intent(getApplicationContext(), join_membership_page.class);
-                        startActivity(a);
-                        break;
-                }
-
+                Intent intent = new Intent(getApplicationContext(), join_membership_page.class);
+                startActivity(intent);
             }
-        };
+        });
 
-        menu_bt.setOnClickListener(cl);
-        notice_bt.setOnClickListener(cl);
-        profile_bt.setOnClickListener(cl);
-        logo_bt.setOnClickListener(cl);
-        find_id.setOnClickListener(cl);
-        find_pw.setOnClickListener(cl);
-        login_bt.setOnClickListener(cl);
-        signup_bt.setOnClickListener(cl);
+        login_bt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+
+                // EditText에 현재 입력되어있는 값을 get(가져온다)해온다.
+                String userID = input_id.getText().toString();
+                String userPass = input_pw.getText().toString();
+//
+                Response.Listener<String> responseListener = new Response.Listener<String>() {
+                    @Override
+                    public void onResponse(String response) {
+                        try {
+                            // TODO : 인코딩 문제때문에 한글 DB인 경우 로그인 불가
+                            System.out.println("sungbeom" + response);
+                            JSONObject jsonObject = new JSONObject(response);
+                            boolean success = jsonObject.getBoolean("success");
+                            if (success) { // 로그인에 성공한 경우
+                                String userID = jsonObject.getString("userID");
+                                String userPass = jsonObject.getString("userPassword");
+
+                                Toast.makeText(getApplicationContext(), "로그인에 성공하였습니다.", Toast.LENGTH_SHORT).show();
+                                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                                intent.putExtra("userID", userID);
+                                intent.putExtra("userPass", userPass);
+                                startActivity(intent);
+                            } else { // 로그인에 실패한 경우
+                                Toast.makeText(getApplicationContext(), "로그인에 실패하였습니다.", Toast.LENGTH_SHORT).show();
+                                return;
+                            }
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                };
+                login_request_page loginRequest = new login_request_page(userID, userPass, responseListener);
+                RequestQueue queue = Volley.newRequestQueue(login_page.this);
+                queue.add(loginRequest);
+            }
+        });
 
     }
-}
+        }
+
+
+
+
+//
+//// 이전 코드
+////    cl = new View.OnClickListener() {
+////@Override
+////public void onClick(View view) {
+////        switch (view.getId()) {
+////        case R.id.menu_bt:
+////        i = new Intent(getApplicationContext(), menu_page.class);
+////        startActivity(i);
+////        break;
+////        case R.id.notice_bt:
+////        j = new Intent(getApplicationContext(), notice_page.class);
+////        startActivity(j);
+////        break;
+////        case R.id.profile_bt:
+////        k = new Intent(getApplicationContext(), my_page.class);
+////        startActivity(k);
+////        break;
+////        case R.id.logo_bt:
+////        l = new Intent(getApplicationContext(), MainActivity.class);
+////        startActivity(l);
+////        break;
+////        case R.id.signup_bt:
+////        m = new Intent(getApplicationContext(),join_membership_page.class);
+////        String userID = input_id.toString();
+////        String userPassword = input_pw.toString();
+////        break;
+////
+////
+////
+////        }
+////
+////        }
+////
+////
+////        };
+////
+////        }
+////        };
+////
+////        menu_bt.setOnClickListener(cl);
+////        notice_bt.setOnClickListener(cl);
+////        profile_bt.setOnClickListener(cl);
+////        logo_bt.setOnClickListener(cl);
+////        find_id.setOnClickListener(cl);
+////        find_pw.setOnClickListener(cl);
+////        login_bt.setOnClickListener(cl);
+////        signup_bt.setOnClickListener(cl);
+////
+////        }
+////        }
+//
+//
+//

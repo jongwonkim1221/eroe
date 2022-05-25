@@ -25,7 +25,7 @@ public class user_add_page extends AppCompatActivity {
     protected void onCreate(Bundle saveInstanceState) {
 
         super.onCreate(saveInstanceState);
-        setContentView(R.layout.service_center_page);
+        setContentView(R.layout.user_add_page);
 
         logo_bt = (ImageButton) findViewById(R.id.logo_bt);
         notice_bt = (ImageButton) findViewById(R.id.notice_bt);
@@ -78,4 +78,5 @@ public class user_add_page extends AppCompatActivity {
         menu_bt.setOnClickListener(cl);
         storage_bt.setOnClickListener(cl);
     }
+public class login_request {
 }
