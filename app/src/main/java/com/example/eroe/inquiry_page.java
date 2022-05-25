@@ -9,6 +9,8 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.namespace.R;
+
 public class inquiry_page extends AppCompatActivity {
 
     ImageButton logo_bt, notice_bt, profile_bt, menu_bt;
