@@ -22,7 +22,7 @@ public class module_search_page extends AppCompatActivity {
     protected void onCreate(Bundle saveInstanceState) {
 
         super.onCreate(saveInstanceState);
-        setContentView(R.layout.my_page);
+        setContentView(R.layout.module_search_page);
 
         logo_bt = (ImageButton) findViewById(R.id.logo_bt);
         notice_bt = (ImageButton) findViewById(R.id.notice_bt);
