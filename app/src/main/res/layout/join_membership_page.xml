@@ -61,7 +61,7 @@
         app:srcCompat="@drawable/menu" />
 
     <View
-        android:id="@+id/view28"
+        android:id="@+id/view"
         android:layout_width="411dp"
         android:layout_height="1dp"
         android:layout_marginBottom="672dp"
@@ -172,7 +172,7 @@
                 tools:layout_editor_absoluteY="221dp" />
 
             <TextView
-                android:id="@+id/name_text"
+                android:id="@+id/name_txt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="이름"

@@ -36,7 +36,7 @@ public class my_info_modify_page extends AppCompatActivity {
         birth_txt = (TextView) findViewById(R.id.birth_txt);
         gender_txt = (TextView) findViewById(R.id.gender_txt);
         phonenum_txt = (TextView) findViewById(R.id.phonenum_txt);
-        address_txt = (TextView) findViewById(R.id.phonenum_txt);
+        address_txt = (TextView) findViewById(R.id.address_txt);
         name_editxt = (EditText) findViewById(R.id.name_editxt);
         birth_editxt = (EditText) findViewById(R.id.birth_editxt);
         phonenum_editxt = (EditText) findViewById(R.id.phonenum_editxt);
