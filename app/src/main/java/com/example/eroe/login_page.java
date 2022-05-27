@@ -26,7 +26,7 @@ public class login_page extends AppCompatActivity {
     TextView login_txt, id_txt, password_txt;
     Button find_id, find_pw, login_bt, signup_bt;
     View.OnClickListener cl;
-    Intent i, j, k, l,a,m;
+    Intent intent, i, j, k, l;
 
 
 
@@ -73,7 +73,6 @@ public class login_page extends AppCompatActivity {
                 // EditText에 현재 입력되어있는 값을 get(가져온다)해온다.
                 String userID = input_id.getText().toString();
                 String userPass = input_pw.getText().toString();
-//
                 Response.Listener<String> responseListener = new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
@@ -106,29 +105,52 @@ public class login_page extends AppCompatActivity {
             }
         });
 
+        cl = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                switch (v.getId()) {
+                    case R.id.logo_bt:
+                        i = new Intent(getApplicationContext(), MainActivity.class);
+                        startActivity(i);
+                        break;
+                    case R.id.notice_bt:
+                        j = new Intent(getApplicationContext(), notice_page.class);
+                        startActivity(j);
+                        break;
+                    case R.id.profile_bt:
+                        k = new Intent(getApplicationContext(), my_page.class);
+                        startActivity(k);
+                        break;
+                    case R.id.menu_bt:
+                        l = new Intent(getApplicationContext(), menu_page.class);
+                        startActivity(l);
+                        break;
 
-                find_id.setOnClickListener(new View.OnClickListener() {
-                     @Override
-                    public void onClick(View view) {
-                     Intent intent = new Intent(getApplicationContext(),MainActivity.class);
+                }
+            }
+        };
+            find_id.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                }
+            });
 
-                find_pw.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-
+            find_pw.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                     }
                 });
 
-
-            }
-
-        });
+    menu_bt.setOnClickListener(cl);
+    notice_bt.setOnClickListener(cl);
+    profile_bt.setOnClickListener(cl);
+    logo_bt.setOnClickListener(cl);
     find_id.setOnClickListener(cl);
-    signup_bt.setOnClickListener(cl);
-    login_bt.setOnClickListener(cl);
     find_pw.setOnClickListener(cl);
     }
 
-        }
+}
 
 
