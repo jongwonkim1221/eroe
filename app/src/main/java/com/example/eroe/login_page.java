@@ -103,7 +103,29 @@ public class login_page extends AppCompatActivity {
             }
         });
 
+
+                find_id.setOnClickListener(new View.OnClickListener() {
+                     @Override
+                    public void onClick(View view) {
+                     Intent intent = new Intent(getApplicationContext(),MainActivity.class);
+
+                find_pw.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+
+                    }
+                });
+
+
+            }
+
+        });
+    find_id.setOnClickListener(cl);
+    signup_bt.setOnClickListener(cl);
+    login_bt.setOnClickListener(cl);
+    find_pw.setOnClickListener(cl);
     }
+
         }
 
 
