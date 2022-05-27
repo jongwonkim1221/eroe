@@ -10,7 +10,6 @@ import com.example.namespace.R;
 import net.daum.mf.map.api.MapView;
 
 
-
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -21,12 +20,14 @@ public class MainActivity extends AppCompatActivity {
 
         MapView mapView = new MapView(this);
 
-        ViewGroup mapViewContainer = (ViewGroup) findViewById(R.id.map_view);
+        ViewGroup mapViewContainer = (ViewGroup) findViewById(R.id.mapView);
         mapViewContainer.addView(mapView);
 
 
     }
 }
+
+
 
 
 
