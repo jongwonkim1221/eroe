@@ -15,13 +15,13 @@ public class register_request extends StringRequest {
     private Map<String, String> map;
     //private Map<String, String>parameters;
 
-    public register_request(String UserEmail, String UserPwd, String UserName, int userAge, Response.Listener<String> listener) {
+    public register_request(String userID, String userphonenum, String useraddress, int useremail, int userpassword, String username, int userbirth, Response.Listener<String> listener) {
         super(Method.POST, URL, listener, null);
 
         map = new HashMap<>();
-        map.put("UserEmail", UserEmail);
-        map.put("UserPwd", UserPwd);
-        map.put("UserName", UserName);
+        map.put("username", username);
+        map.put("userID", userID);
+        map.put("useraddress", useraddress);
     }
 
     @Override

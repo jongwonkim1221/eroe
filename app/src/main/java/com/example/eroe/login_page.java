@@ -51,13 +51,18 @@ public class login_page extends AppCompatActivity {
         login_bt = (Button) findViewById(R.id.login_bt);
         signup_bt = (Button) findViewById(R.id.signup_bt);
 
+        input_id = findViewById(R.id.input_id);
+        input_pw = findViewById(R.id.input_pw);
+        login_bt = findViewById(R.id.login_bt);
+        signup_bt = findViewById(R.id.signup_bt);
+
 
 
         // 회원가입 버튼을 클릭 시 수행
         signup_bt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), register.class);
+                Intent intent = new Intent(login_page.this, register.class);
                 startActivity(intent);
             }
         });
@@ -65,8 +70,6 @@ public class login_page extends AppCompatActivity {
         login_bt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-
                 // EditText에 현재 입력되어있는 값을 get(가져온다)해온다.
                 String userID = input_id.getText().toString();
                 String userPass = input_pw.getText().toString();

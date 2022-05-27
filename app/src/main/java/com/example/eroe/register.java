@@ -2,6 +2,7 @@ package com.example.eroe;
 
 
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -28,9 +29,10 @@ public class register extends AppCompatActivity {
     EditText id_editxt, password_editxt, passwordc_editxt, name_editxt, birth_editxt, phonenum_editxt, email_editxt, address_editxt;
     Button check_bt, join_bt;
     RadioButton male_bt, female_bt;
-    View.OnClickListener cl;
+    boolean validate = false;
+    AlertDialog dialog;
     Intent i, j, k, l, m;
-    String userid, userpassword, username, userbirth, userphonenum, useremail, useraddress;
+    String userID, userpassword, username, userbirth, userphonenum, useremail, useraddress;
 
     @Override
     protected void onCreate(Bundle saveInstanceState) {
@@ -69,6 +71,61 @@ public class register extends AppCompatActivity {
         password_editxt = findViewById(R.id.password_editxt);
         name_editxt = findViewById(R.id.name_editxt);
         birth_editxt = findViewById(R.id.birth_editxt);
+        passwordc_editxt = findViewById(R.id.passwordc_editxt);
+        phonenum_editxt = findViewById(R.id.phonenum_editxt);
+        email_editxt = findViewById(R.id.email_editxt);
+        address_editxt = findViewById(R.id.address_editxt);
+        //아이디 중복확인 버튼 클릭 시 수행
+        check_bt = findViewById(R.id.check_bt);
+        check_bt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String userID = id_editxt.getText().toString();
+                if(validate)
+                {
+                    return;
+                }
+                if(userID.equals("")){
+                    AlertDialog.Builder builder = new AlertDialog.Builder(register.this);
+                    dialog = builder.setMessage("아이디를 입력하세요.")
+                            .setPositiveButton("확인",null)
+                            .create();
+                            dialog.show();
+                            return;
+                }
+                Response.Listener<String> responseListener = new Response.Listener<String>() {
+                    @Override
+                    public void onResponse(String response) {
+                        try {
+                            JSONObject jsonResponse = new JSONObject(response);
+                            boolean success = jsonResponse.getBoolean("success");
+                            if (success) {
+                                AlertDialog.Builder builder = new AlertDialog.Builder(register.this);
+                                dialog = builder.setMessage("사용 불가능한 아이디 입니다.")
+                                        .setPositiveButton("확인",null)
+                                        .create();
+                                dialog.show();
+                                id_editxt.setEnabled(false);
+                                validate = true;
+                                check_bt.setText("확인");
+                            }
+                            else{
+                                AlertDialog.Builder builder = new AlertDialog.Builder(register.this);
+                                dialog = builder.setMessage("사용 가능한 아이디 입니다.")
+                                        .setPositiveButton("확인",null)
+                                        .create();
+                                dialog.show();
+                            }
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                };
+                validate_request validate_request=new validate_request(userID,responseListener);
+                RequestQueue queue= Volley.newRequestQueue(register.this);
+                queue.add(validate_request);
+            }
+        });
 
         // 회원가입 버튼 클릭 시 수행
         join_bt = findViewById(R.id.join_bt);
@@ -77,9 +134,12 @@ public class register extends AppCompatActivity {
             public void onClick(View view) {
                 // EditText에 현재 입력되어있는 값을 get(가져온다)해온다.
                 String userID = id_editxt.getText().toString();
-                String userPass = password_editxt.getText().toString();
-                String userName =name_editxt.getText().toString();
-                int userAge = Integer.parseInt(birth_editxt.getText().toString());
+                int userpassword = Integer.parseInt(password_editxt.getText().toString());
+                String username =name_editxt.getText().toString();
+                int userbirth = Integer.parseInt(birth_editxt.getText().toString());
+                int userphonenum = Integer.parseInt(phonenum_editxt.getText().toString());
+                String useremail = email_editxt.getText().toString();
+                String useraddress = address_editxt.getText().toString();
 
                 Response.Listener<String> responseListener = new Response.Listener<String>() {
                     @Override
@@ -102,7 +162,7 @@ public class register extends AppCompatActivity {
                     }
                 };
                 // 서버로 Volley를 이용해서 요청을 함.
-                register_request registerRequest = new register_request(userID,userPass,userName,userAge, responseListener);
+                register_request registerRequest = new register_request(userID, useraddress,username,userbirth,userphonenum,useremail, userpassword, responseListener);
                 RequestQueue queue = Volley.newRequestQueue(register.this);
                 queue.add(registerRequest);
 
