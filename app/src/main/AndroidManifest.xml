@@ -17,10 +17,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Eroe"
         android:usesCleartextTraffic="true"
-        android:networkSecurityConfig="@xml/network_security_config">
+        android:networkSecurityConfig="@xml/network_security_config" >
 
-
-
+        <activity android:name=".login_page"></activity>
+        <activity android:name=".user_add_page"></activity>
+        <activity android:name=".user_info_page"></activity>
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -31,19 +32,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity android:name=".my_page"></activity>
         <activity android:name=".notice_page"></activity>
         <activity android:name=".qna_page"></activity>
         <activity android:name=".declaration_page"></activity>
-        <activity android:name=".login_page"></activity>
         <activity android:name=".setting_page"></activity>
         <activity android:name=".inquiry_page"></activity>
         <activity android:name=".my_info_modify_page"></activity>
         <activity android:name=".service_center_page"></activity>
         <activity android:name=".module_search_page"></activity>
         <activity android:name=".user_info_modify_page"></activity>
-        <activity android:name=".user_info_page"></activity>
         <activity android:name=".register"></activity>
 
 

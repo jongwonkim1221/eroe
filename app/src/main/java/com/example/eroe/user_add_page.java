@@ -68,7 +68,7 @@ public class user_add_page extends AppCompatActivity {
                     case R.id.storage_bt:
                         m = new Intent(getApplicationContext(), user_info_page.class);
                         startActivity(m);
-                        Toast.makeText(getApplicationContext(), "내 정보 수정이 완료 되었습니다.", Toast.LENGTH_LONG).show();
+                        Toast.makeText(getApplicationContext(), "사용자 추가가 완료 되었습니다.", Toast.LENGTH_LONG).show();
                         break;
                 }
             }

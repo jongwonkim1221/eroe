@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -15,25 +16,34 @@ import com.example.namespace.R;
 public class user_info_page extends AppCompatActivity {
 
     ImageButton logo_bt, notice_bt, profile_bt, menu_bt, photo_bt;
-    Button modify_bt, logout_bt;
-    TextView parent_txt;
+    Button bt1, bt2, bt3, bt4;
+    TextView parent_txt, txt1, txt2, txt3, txt4;
+    ImageView iv1, iv2;
     View.OnClickListener cl;
-    Intent i, j, k, l, m, n;
+    Intent i, j, k, l, m, n, o, p;
 
 
     @Override
     protected void onCreate(Bundle saveInstanceState) {
 
         super.onCreate(saveInstanceState);
-        setContentView(R.layout.my_page);
+        setContentView(R.layout.user_info_page);
 
         logo_bt = (ImageButton) findViewById(R.id.logo_bt);
         notice_bt = (ImageButton) findViewById(R.id.notice_bt);
         profile_bt = (ImageButton) findViewById(R.id.profile_bt);
         menu_bt = (ImageButton) findViewById(R.id.menu_bt);
         photo_bt = (ImageButton) findViewById(R.id.photo_bt);
-        modify_bt = (Button) findViewById(R.id.modify_bt);
-        logout_bt = (Button) findViewById(R.id.logout_bt);
+        iv1 = (ImageView) findViewById(R.id.imageView1);
+        iv2 = (ImageView) findViewById(R.id.imageView2);
+        txt1 = (TextView) findViewById(R.id.textView1);
+        txt2 = (TextView) findViewById(R.id.textView2);
+        txt3 = (TextView) findViewById(R.id.textView3);
+        txt4 = (TextView) findViewById(R.id.textView4);
+        bt1 = (Button) findViewById(R.id.button1);
+        bt2 = (Button) findViewById(R.id.button2);
+        bt3 = (Button) findViewById(R.id.button3);
+        bt4 = (Button) findViewById(R.id.button4);
         parent_txt = (TextView) findViewById(R.id.parent_txt);
 
         cl = new View.OnClickListener() {
@@ -56,14 +66,21 @@ public class user_info_page extends AppCompatActivity {
                         l = new Intent(getApplicationContext(), menu_page.class);
                         startActivity(l);
                         break;
-                    case R.id.modify_bt:
-                        m = new Intent(getApplicationContext(), user_info_modify_page.class);
+                    case R.id.button1:
+                        m = new Intent(getApplicationContext(), MainActivity.class);
                         startActivity(m);
                         break;
-                    case R.id.logout_bt:
-                        n = new Intent(getApplicationContext(),login_page.class);
+                    case R.id.button2:
+                        n = new Intent(getApplicationContext(), setting_page.class);
                         startActivity(n);
-                        Toast.makeText(getApplicationContext(), "로그아웃 되었습니다.", Toast.LENGTH_LONG).show();
+                        break;
+                    case R.id.button3:
+                        o = new Intent(getApplicationContext(), MainActivity.class);
+                        startActivity(o);
+                        break;
+                    case R.id.button4:
+                        p = new Intent(getApplicationContext(), setting_page.class);
+                        startActivity(p);
                         break;
                 }
             }
@@ -72,7 +89,9 @@ public class user_info_page extends AppCompatActivity {
         notice_bt.setOnClickListener(cl);
         profile_bt.setOnClickListener(cl);
         menu_bt.setOnClickListener(cl);
-        modify_bt.setOnClickListener(cl);
-        logout_bt.setOnClickListener(cl);
+        bt1.setOnClickListener(cl);
+        bt2.setOnClickListener(cl);
+        bt3.setOnClickListener(cl);
+        bt4.setOnClickListener(cl);
     }
 }

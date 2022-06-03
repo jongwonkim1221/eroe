@@ -118,7 +118,7 @@
         tools:layout_editor_absoluteY="159dp" />
 
     <TextView
-        android:id="@+id/textView12"
+        android:id="@+id/textView2"
         android:layout_width="56dp"
         android:layout_height="31dp"
         android:gravity="center"
@@ -131,7 +131,7 @@
         tools:layout_editor_absoluteY="159dp" />
 
     <View
-        android:id="@+id/view31"
+        android:id="@+id/view3"
         android:layout_width="335dp"
         android:layout_height="1dp"
         android:layout_marginBottom="516dp"
@@ -144,7 +144,7 @@
         app:layout_constraintVertical_bias="0.987" />
 
     <Button
-        android:id="@+id/button14"
+        android:id="@+id/button1"
         android:layout_width="240dp"
         android:layout_height="45dp"
         android:background="@android:color/transparent"
@@ -155,7 +155,7 @@
         tools:layout_editor_absoluteY="213dp" />
 
     <View
-        android:id="@+id/view35"
+        android:id="@+id/view4"
         android:layout_width="1dp"
         android:layout_height="43dp"
         android:layout_marginBottom="472dp"
@@ -164,11 +164,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.682"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view31"
+        app:layout_constraintTop_toBottomOf="@+id/view3"
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:id="@+id/button15"
+        android:id="@+id/button2"
         android:layout_width="95dp"
         android:layout_height="45dp"
         android:background="@android:color/transparent"
@@ -179,7 +179,7 @@
         tools:layout_editor_absoluteY="213dp" />
 
     <View
-        android:id="@+id/view33"
+        android:id="@+id/view5"
         android:layout_width="335dp"
         android:layout_height="178dp"
         android:layout_marginEnd="36dp"
@@ -190,7 +190,7 @@
         app:layout_constraintVertical_bias="0.499" />
 
     <ImageButton
-        android:id="@+id/imageButton4"
+        android:id="@+id/imageButton1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/profile2"
@@ -198,7 +198,7 @@
         tools:layout_editor_absoluteY="303dp" />
 
     <TextView
-        android:id="@+id/textView11"
+        android:id="@+id/textView3"
         android:layout_width="94dp"
         android:layout_height="33dp"
         android:text="사용자"
@@ -218,7 +218,7 @@
         tools:layout_editor_absoluteY="354dp" />
 
     <TextView
-        android:id="@+id/textView14"
+        android:id="@+id/textView4"
         android:layout_width="56dp"
         android:layout_height="31dp"
         android:gravity="center"
@@ -231,7 +231,7 @@
         tools:layout_editor_absoluteY="355dp" />
 
     <View
-        android:id="@+id/view34"
+        android:id="@+id/view7"
         android:layout_width="335dp"
         android:layout_height="1dp"
         android:layout_marginBottom="320dp"
@@ -244,7 +244,7 @@
         app:layout_constraintVertical_bias="0.994" />
 
     <Button
-        android:id="@+id/button16"
+        android:id="@+id/button3"
         android:layout_width="240dp"
         android:layout_height="45dp"
         android:background="@android:color/transparent"
@@ -255,7 +255,7 @@
         tools:layout_editor_absoluteY="408dp" />
 
     <View
-        android:id="@+id/view37"
+        android:id="@+id/view8"
         android:layout_width="1dp"
         android:layout_height="43dp"
         android:layout_marginBottom="276dp"
@@ -264,11 +264,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.685"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view34"
+        app:layout_constraintTop_toBottomOf="@+id/view7"
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:id="@+id/button17"
+        android:id="@+id/button4"
         android:layout_width="95dp"
         android:layout_height="45dp"
         android:background="@android:color/transparent"
