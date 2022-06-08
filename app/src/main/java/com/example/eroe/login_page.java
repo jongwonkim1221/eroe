@@ -51,11 +51,6 @@ public class login_page extends AppCompatActivity {
         login_bt = (Button) findViewById(R.id.login_bt);
         signup_bt = (Button) findViewById(R.id.signup_bt);
 
-        input_id = findViewById(R.id.input_id);
-        input_pw = findViewById(R.id.input_pw);
-        login_bt = findViewById(R.id.login_bt);
-        signup_bt = findViewById(R.id.signup_bt);
-
 
 
         // 회원가입 버튼을 클릭 시 수행
@@ -78,17 +73,17 @@ public class login_page extends AppCompatActivity {
                     public void onResponse(String response) {
                         try {
                             // TODO : 인코딩 문제때문에 한글 DB인 경우 로그인 불가
-                            System.out.println("sungbeom" + response);
+                            System.out.println("eroe_db" + response);
                             JSONObject jsonObject = new JSONObject(response);
                             boolean success = jsonObject.getBoolean("success");
                             if (success) { // 로그인에 성공한 경우
-                                String userID = jsonObject.getString("userID");
-                                String userPass = jsonObject.getString("userPassword");
+                                String userID = jsonObject.getString("User_ID");
+                                String userPass = jsonObject.getString("User_Password");
 
                                 Toast.makeText(getApplicationContext(), "로그인에 성공하였습니다.", Toast.LENGTH_SHORT).show();
                                 Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-                                intent.putExtra("userID", userID);
-                                intent.putExtra("userPass", userPass);
+                                intent.putExtra("User_ID", userID);
+                                intent.putExtra("User_Password", userPass);
                                 startActivity(intent);
                             } else { // 로그인에 실패한 경우
                                 Toast.makeText(getApplicationContext(), "로그인에 실패하였습니다.", Toast.LENGTH_SHORT).show();

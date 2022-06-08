@@ -12,16 +12,16 @@ public class login_request_page  extends StringRequest {
 
 
 // 서버 URL 설정 ( PHP 파일 연동 )
-final static private String URL = "http://dbconnect.iptime.org/phpmyadmin//login.php";
+final static private String URL = "116.45.105.122/login.php";
 private Map<String, String> map;
 
 
-public login_request_page(String userID, String userPassword, Response.Listener<String> listener) {
+public login_request_page(String User_ID, String User_Password, Response.Listener<String> listener) {
         super(Method.POST, URL, listener, null);
 
         map = new HashMap<>();
-        map.put("userID",userID);
-        map.put("userPassword", userPassword);
+        map.put("User_ID",User_ID);
+        map.put("User_Password", User_Password);
 
         }
 
