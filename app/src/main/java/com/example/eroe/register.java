@@ -32,7 +32,7 @@ public class register extends AppCompatActivity {
     boolean validate = false;
     AlertDialog dialog;
     Intent i, j, k, l, m;
-    String userID, userpassword, username, userbirth, userphonenum, useremail, useraddress;
+    String User_ID, User_Password, User_Name, User_Birth, User_Phonenum, User_Email, User_Address;
 
     @Override
     protected void onCreate(Bundle saveInstanceState) {
@@ -80,12 +80,12 @@ public class register extends AppCompatActivity {
         check_bt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String userID = id_editxt.getText().toString();
+                String User_ID = id_editxt.getText().toString();
                 if(validate)
                 {
                     return;
                 }
-                if(userID.equals("")){
+                if(User_ID.equals("")){
                     AlertDialog.Builder builder = new AlertDialog.Builder(register.this);
                     dialog = builder.setMessage("아이디를 입력하세요.")
                             .setPositiveButton("확인",null)
@@ -121,7 +121,7 @@ public class register extends AppCompatActivity {
                         }
                     }
                 };
-                validate_request validate_request=new validate_request(userID,responseListener);
+                validate_request validate_request=new validate_request(User_ID,responseListener);
                 RequestQueue queue= Volley.newRequestQueue(register.this);
                 queue.add(validate_request);
             }
@@ -133,13 +133,13 @@ public class register extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // EditText에 현재 입력되어있는 값을 get(가져온다)해온다.
-                String userID = id_editxt.getText().toString();
-                int userpassword = Integer.parseInt(password_editxt.getText().toString());
-                String username =name_editxt.getText().toString();
-                int userbirth = Integer.parseInt(birth_editxt.getText().toString());
-                int userphonenum = Integer.parseInt(phonenum_editxt.getText().toString());
-                String useremail = email_editxt.getText().toString();
-                String useraddress = address_editxt.getText().toString();
+                String User_ID = id_editxt.getText().toString();
+                int User_Password = Integer.parseInt(password_editxt.getText().toString());
+                String User_Name =name_editxt.getText().toString();
+                int User_Birth = Integer.parseInt(birth_editxt.getText().toString());
+                int User_Phonenum = Integer.parseInt(phonenum_editxt.getText().toString());
+                String User_Email = email_editxt.getText().toString();
+                String User_Address = address_editxt.getText().toString();
 
                 Response.Listener<String> responseListener = new Response.Listener<String>() {
                     @Override
@@ -162,7 +162,7 @@ public class register extends AppCompatActivity {
                     }
                 };
                 // 서버로 Volley를 이용해서 요청을 함.
-                register_request registerRequest = new register_request(userID, useraddress,username,userbirth,userphonenum,useremail, userpassword, responseListener);
+                register_request registerRequest = new register_request(User_ID, User_Address, User_Name, User_Birth, User_Phonenum, User_Email, User_Password, responseListener);
                 RequestQueue queue = Volley.newRequestQueue(register.this);
                 queue.add(registerRequest);
 

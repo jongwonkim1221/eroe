@@ -12,7 +12,7 @@ public class login_request_page  extends StringRequest {
 
 
 // 서버 URL 설정 ( PHP 파일 연동 )
-final static private String URL = "http://dbconnect.iptime.org/phpmyadmin//login.php";
+final static private String URL = "116.45.105.122/login.php";
 private Map<String, String> map;
 
 
