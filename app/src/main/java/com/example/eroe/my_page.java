@@ -57,7 +57,7 @@ public class my_page extends AppCompatActivity {
                         startActivity(l);
                         break;
                     case R.id.modify_bt:
-                        m = new Intent(getApplicationContext(), user_info_modify_page.class);
+                        m = new Intent(getApplicationContext(), my_info_modify_page.class);
                         startActivity(m);
                         break;
                     case R.id.logout_bt:
