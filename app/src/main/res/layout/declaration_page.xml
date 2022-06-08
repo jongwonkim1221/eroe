@@ -72,17 +72,18 @@
         app:srcCompat="@drawable/profile"
         tools:ignore="MissingConstraints" />
 
+
     <View
         android:id="@+id/view"
         android:layout_width="411dp"
         android:layout_height="1dp"
-        android:layout_marginBottom="672dp"
         android:background="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
-
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/logo_bt"
+        app:layout_constraintVertical_bias="0.079" />
 
     <View
         android:id="@+id/decelerate"
@@ -96,7 +97,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view"
-        app:layout_constraintVertical_bias="0.935" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <ImageButton
         android:id="@+id/police_dec"
@@ -106,10 +107,10 @@
         android:scaleType="centerInside"
         app:layout_constraintBottom_toBottomOf="@+id/decelerate"
         app:layout_constraintEnd_toEndOf="@+id/decelerate"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/decelerate"
-        app:layout_constraintTop_toTopOf="@+id/decelerate"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintTop_toTopOf="@+id/view"
+        app:layout_constraintVertical_bias="0.152"
         app:srcCompat="@drawable/police_dec" />
 
     <ImageButton
