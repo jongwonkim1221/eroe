@@ -34,6 +34,7 @@ public class register extends AppCompatActivity {
     Intent i, j, k, l, m;
     String User_ID, User_Password, User_Name, User_Birth, User_Phonenum, User_Email, User_Address;
 
+    //시발
     @Override
     protected void onCreate(Bundle saveInstanceState) {
         super.onCreate(saveInstanceState);
