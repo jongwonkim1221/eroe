@@ -96,31 +96,37 @@ public class login_page extends AppCompatActivity {
                 queue.add(loginRequest);
             }
         });
-
-        cl = new View.OnClickListener() {
+        logo_bt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                switch (v.getId()) {
-                    case R.id.logo_bt:
-                        i = new Intent(getApplicationContext(), MainActivity.class);
-                        startActivity(i);
-                        break;
-                    case R.id.notice_bt:
-                        j = new Intent(getApplicationContext(), notice_page.class);
-                        startActivity(j);
-                        break;
-                    case R.id.profile_bt:
-                        k = new Intent(getApplicationContext(), my_page.class);
-                        startActivity(k);
-                        break;
-                    case R.id.menu_bt:
-                        l = new Intent(getApplicationContext(), menu_page.class);
-                        startActivity(l);
-                        break;
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(intent);
 
-                }
+
             }
-        };
-    }
 
+        });
+        notice_bt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), notice_page.class);
+                startActivity(intent);
+
+            }
+        });
+        profile_bt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), my_page.class);
+                startActivity(intent);
+            }
+        });
+        menu_bt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), menu_page.class);
+            }
+        });
+    }
 }
+

@@ -31,7 +31,7 @@ public class register extends AppCompatActivity {
     RadioButton male_bt, female_bt;
     boolean validate = false;
     AlertDialog dialog;
-    Intent i, j, k, l, m;
+    Intent intent;
     String User_ID, User_Password, User_Name, User_Birth, User_Phonenum , User_Email, User_Address;
 
     //시발
@@ -169,6 +169,8 @@ public class register extends AppCompatActivity {
 
             }
         });
+
+
 
     }
 }
