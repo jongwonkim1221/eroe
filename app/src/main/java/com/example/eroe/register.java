@@ -31,7 +31,7 @@ public class register extends AppCompatActivity {
     RadioButton male_bt, female_bt;
     boolean validate = false;
     AlertDialog dialog;
-    Intent i, j, k, l, m;
+    Intent intent;
     String User_ID, User_Password, User_Name, User_Birth, User_Phonenum , User_Email, User_Address;
 
     //시발
@@ -163,12 +163,14 @@ public class register extends AppCompatActivity {
                     }
                 };
                 // 서버로 Volley를 이용해서 요청을 함.
-                register_request registerRequest = new register_request(User_ID, User_Address,User_Name,User_Birth,User_Phonenum,User_Email, User_Password, responseListener);
+                register_request registerRequest = new register_request(User_ID,User_Address,User_Name,User_Birth,User_Phonenum,User_Email, User_Password, responseListener);
                 RequestQueue queue = Volley.newRequestQueue(register.this);
                 queue.add(registerRequest);
 
             }
         });
+
+
 
     }
 }
