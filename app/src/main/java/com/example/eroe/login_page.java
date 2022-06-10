@@ -29,8 +29,6 @@ public class login_page extends AppCompatActivity {
     Intent intent, i, j, k, l;
 
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -52,7 +50,6 @@ public class login_page extends AppCompatActivity {
         signup_bt = (Button) findViewById(R.id.signup_bt);
 
 
-
         // 회원가입 버튼을 클릭 시 수행
         signup_bt.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -66,14 +63,14 @@ public class login_page extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // EditText에 현재 입력되어있는 값을 get(가져온다)해온다.
-                String userID = input_id.getText().toString();
-                String userPass = input_pw.getText().toString();
+                String User_ID = input_id.getText().toString();
+                String User_Password = input_pw.getText().toString();
                 Response.Listener<String> responseListener = new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
                         try {
                             // TODO : 인코딩 문제때문에 한글 DB인 경우 로그인 불가
-                            System.out.println("eroe_db" + response);
+                            System.out.println("root" + response);
                             JSONObject jsonObject = new JSONObject(response);
                             boolean success = jsonObject.getBoolean("success");
                             if (success) { // 로그인에 성공한 경우
@@ -94,7 +91,7 @@ public class login_page extends AppCompatActivity {
                         }
                     }
                 };
-                login_request_page loginRequest = new login_request_page(userID, userPass, responseListener);
+                login_request_page loginRequest = new login_request_page(User_ID, User_Password, responseListener);
                 RequestQueue queue = Volley.newRequestQueue(login_page.this);
                 queue.add(loginRequest);
             }
@@ -124,28 +121,6 @@ public class login_page extends AppCompatActivity {
                 }
             }
         };
-            find_id.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-                }
-            });
-
-            find_pw.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-                    }
-                });
-
-    menu_bt.setOnClickListener(cl);
-    notice_bt.setOnClickListener(cl);
-    profile_bt.setOnClickListener(cl);
-    logo_bt.setOnClickListener(cl);
-    find_id.setOnClickListener(cl);
-    find_pw.setOnClickListener(cl);
     }
 
 }
-
-

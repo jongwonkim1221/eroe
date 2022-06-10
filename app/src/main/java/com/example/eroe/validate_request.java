@@ -13,11 +13,11 @@ public class validate_request extends StringRequest {
     final static  private String URL="http://dbconnect.iptime.org/validate.php";
     private Map<String,String> map;
 
-    public validate_request(String userID, Response.Listener<String>listener){
+    public validate_request(String User_ID, Response.Listener<String>listener){
         super(Request.Method.POST,URL,listener,null);
 
         map=new HashMap<>();
-        map.put("userID",userID);
+        map.put("userID",User_ID);
     }
 
     @Override
