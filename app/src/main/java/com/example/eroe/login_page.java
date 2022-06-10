@@ -96,37 +96,37 @@ public class login_page extends AppCompatActivity {
                 queue.add(loginRequest);
             }
         });
-        logo_bt.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-                startActivity(intent);
-
-
-            }
-
-        });
-        notice_bt.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), notice_page.class);
-                startActivity(intent);
-
-            }
-        });
-        profile_bt.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), my_page.class);
-                startActivity(intent);
-            }
-        });
-        menu_bt.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), menu_page.class);
-            }
-        });
+//        logo_bt.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+//                startActivity(intent);
+//
+//
+//            }
+//
+//        });
+//        notice_bt.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(getApplicationContext(), notice_page.class);
+//                startActivity(intent);
+//
+//            }
+//        });
+//        profile_bt.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(getApplicationContext(), my_page.class);
+//                startActivity(intent);
+//            }
+//        });
+//        menu_bt.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(getApplicationContext(), menu_page.class);
+//            }
+//        });
     }
 }
 
