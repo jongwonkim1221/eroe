@@ -43,6 +43,7 @@
         <activity android:name=".module_search_page"></activity>
         <activity android:name=".user_info_modify_page"></activity>
         <activity android:name=".register"></activity>
+        <activity android:name=".menu_page"></activity>
 
 
         <meta-data android:name="com.kakao.sdk.AppKey" android:value="b9db38bdcbe294d8902eb53180f04402"/>

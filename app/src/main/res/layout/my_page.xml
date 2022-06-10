@@ -68,18 +68,6 @@
         app:srcCompat="@drawable/profile"/>
 
     <View
-        android:id="@+id/view19"
-        android:layout_width="335dp"
-        android:layout_height="178dp"
-        android:background="@drawable/round"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.526"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view13"
-        app:layout_constraintVertical_bias="0.042" />
-
-    <View
         android:id="@+id/view13"
         android:layout_width="411dp"
         android:layout_height="1dp"
@@ -91,6 +79,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/logo_bt"
         app:layout_constraintVertical_bias="0.0" />
+
+    <View
+        android:id="@+id/view19"
+        android:layout_width="335dp"
+        android:layout_height="178dp"
+        android:background="@drawable/round"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view13"
+        app:layout_constraintVertical_bias="0.042" />
 
     <View
         android:id="@+id/view23"

@@ -34,7 +34,6 @@
 
     <ImageButton
         android:id="@+id/profile_bt"
-        tools:ignore="MissingConstraints"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginTop="16dp"
@@ -42,9 +41,11 @@
         android:background="@android:color/transparent"
         android:scaleType="centerInside"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.894"
         app:layout_constraintStart_toEndOf="@+id/notice_bt"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/profile" />
+        app:srcCompat="@drawable/profile"
+        tools:ignore="MissingConstraints" />
 
     <ImageButton
         android:id="@+id/menu_bt"
@@ -54,11 +55,12 @@
         android:layout_marginTop="16dp"
         android:background="@android:color/transparent"
         android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@+id/view1"
         app:layout_constraintEnd_toStartOf="@+id/logo_bt"
-        app:layout_constraintHorizontal_bias="0.137"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.571"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/menu" />
 
     <View

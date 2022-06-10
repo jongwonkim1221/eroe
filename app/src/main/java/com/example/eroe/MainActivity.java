@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -15,6 +16,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.namespace.R;
 
+import net.daum.mf.map.api.MapPOIItem;
+import net.daum.mf.map.api.MapPoint;
 import net.daum.mf.map.api.MapView;
 
 
@@ -26,6 +29,9 @@ public class MainActivity extends AppCompatActivity {
     Button button, button5, button6, button7;
     View.OnClickListener cl;
     Intent i, j, k, l, m, n, o, p, q, r;
+
+    MapView mapview;
+    RelativeLayout mapViewContainer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,11 +52,28 @@ public class MainActivity extends AppCompatActivity {
         button6 = (Button) findViewById(R.id.button6);
         button7 = (Button) findViewById(R.id.button7);
 
-        MapView mapview;
         mapview = new MapView(this);
 
         ViewGroup mapViewContainer = (ViewGroup) findViewById(R.id.map_view);
         mapViewContainer.addView(mapview);
+
+        /*마커 추가*/
+        //마커 찍기
+        MapPoint MARKER_POINT1 = MapPoint.mapPointWithGeoCoord(37.5666805, 126.9784147);
+        // 마커 아이콘 추가하는 함수
+        MapPOIItem marker1 = new MapPOIItem();
+        // 클릭 했을 때 나오는 호출 값
+        marker1.setItemName("현재 위치");
+        // 왜 있는지 잘 모르겠음
+        marker1.setTag(0);
+        // 좌표를 입력받아 현 위치로 출력
+        marker1.setMapPoint(MARKER_POINT1);
+        //  (클릭 전)기본으로 제공하는 BluePin 마커 모양의 색.
+        marker1.setMarkerType(MapPOIItem.MarkerType.RedPin);
+        // (클릭 후) 마커를 클릭했을때, 기본으로 제공하는 RedPin 마커 모양.
+        marker1.setSelectedMarkerType(MapPOIItem.MarkerType.RedPin);
+        // 지도화면 위에 추가되는 아이콘을 추가하기 위한 호출(말풍선 모양)
+        mapview.addPOIItem(marker1);
 
         cl = new View.OnClickListener() {
             @Override

@@ -14,6 +14,7 @@ public class qna_page extends AppCompatActivity {
 
     ImageButton logo_bt, notice_bt, profile_bt, menu_bt;
     Button qna1, qna2;
+
     View.OnClickListener cl;
     Intent i, j, k, l, m, n;
 

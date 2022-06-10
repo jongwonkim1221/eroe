@@ -65,9 +65,9 @@ public class user_info_modify_page extends AppCompatActivity {
                         startActivity(l);
                         break;
                     case R.id.storage_bt:
-                        m = new Intent(getApplicationContext(), user_info_page.class);
+                        m = new Intent(getApplicationContext(), my_page.class);
                         startActivity(m);
-                        Toast.makeText(getApplicationContext(), "사용자 정보 수정이 완료 되었습니다.", Toast.LENGTH_LONG).show();
+                        Toast.makeText(getApplicationContext(), "내 정보 수정이 완료 되었습니다.", Toast.LENGTH_LONG).show();
                         break;
                 }
             }
