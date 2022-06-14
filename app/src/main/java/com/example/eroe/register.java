@@ -134,8 +134,6 @@ public class register extends AppCompatActivity {
             public void onClick(View view) {
                 // EditText에 현재 입력되어있는 값을 get(가져온다)해온다.
                 String User_ID = id_editxt.getText().toString();
-                int User_Password = Integer.parseInt(password_editxt.getText().toString());
-                String User_Name = name_editxt.getText().toString();
                 String User_Password = password_editxt.getText().toString();
                 String User_Name =name_editxt.getText().toString();
                 int User_Birth = Integer.parseInt(birth_editxt.getText().toString());
