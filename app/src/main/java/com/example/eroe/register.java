@@ -99,7 +99,7 @@ public class register extends AppCompatActivity {
                         try {
                             JSONObject jsonResponse = new JSONObject(response);
                             boolean success = jsonResponse.getBoolean("success");
-                            if (success) {
+                            if(success) {
                                 AlertDialog.Builder builder = new AlertDialog.Builder(register.this);
                                 dialog = builder.setMessage("사용 불가능한 아이디 입니다.")
                                         .setPositiveButton("확인",null)
@@ -133,43 +133,104 @@ public class register extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // EditText에 현재 입력되어있는 값을 get(가져온다)해온다.
-                String User_ID = id_editxt.getText().toString();
-                String User_Password = password_editxt.getText().toString();
-                String User_Name =name_editxt.getText().toString();
+                final String User_ID = id_editxt.getText().toString();
+                final String User_Password = password_editxt.getText().toString();
+                final String User_Name =name_editxt.getText().toString();
                 int User_Birth = Integer.parseInt(birth_editxt.getText().toString());
                 int User_Phonenum = Integer.parseInt(phonenum_editxt.getText().toString());
-                String User_Email = email_editxt.getText().toString();
-                String User_Address = address_editxt.getText().toString();
+                final String User_Email = email_editxt.getText().toString();
+                final String User_Address = address_editxt.getText().toString();
+
+
+                //아이디 중복체크 했는지 확인
+                if (!validate) {
+                    AlertDialog.Builder builder = new AlertDialog.Builder(register.this);
+                    dialog = builder.setMessage("중복된 아이디가 있는지 확인하세요.").setNegativeButton("확인", null).create();
+                    dialog.show();
+                    return;
+                }
+
+                //한 칸이라도 입력 안했을 경우
+                if (User_ID.equals("") || User_Password.equals("") || User_Name.equals("")) {
+                    AlertDialog.Builder builder = new AlertDialog.Builder(register.this);
+                    dialog = builder.setMessage("모두 입력해주세요.").setNegativeButton("확인", null).create();
+                    dialog.show();
+                    return;
+                }
 
                 Response.Listener<String> responseListener = new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
+
                         try {
-                            JSONObject jsonObject = new JSONObject(response);
-                            boolean success = jsonObject.getBoolean("success");
-                            if (success) { // 회원등록에 성공한 경우
-                                Toast.makeText(getApplicationContext(),"회원 등록에 성공하였습니다.",Toast.LENGTH_LONG).show();
-                                Intent intent = new Intent(register.this, login_page.class);
-                                startActivity(intent);
-                            } else { // 회원등록에 실패한 경우
-                                Toast.makeText(getApplicationContext(),"회원 등록에 실패하였습니다.",Toast.LENGTH_LONG).show();
+                            JSONObject jsonObject = new JSONObject( response );
+                            boolean success = jsonObject.getBoolean( "success" );
+
+                            //회원가입 성공시
+                            if(User_Password.equals("")) {
+                                if (success) {
+
+                                    Toast.makeText(getApplicationContext(), String.format("%s님 가입을 환영합니다.", User_Name), Toast.LENGTH_SHORT).show();
+                                    Intent intent = new Intent(register.this, login_page.class);
+                                    startActivity(intent);
+
+                                    //회원가입 실패시
+                                } else {
+                                    Toast.makeText(getApplicationContext(), "회원가입에 실패하였습니다.", Toast.LENGTH_SHORT).show();
+                                    return;
+                                }
+                            } else {
+                                AlertDialog.Builder builder = new AlertDialog.Builder(register.this);
+                                dialog = builder.setMessage("비밀번호가 동일하지 않습니다.").setNegativeButton("확인", null).create();
+                                dialog.show();
                                 return;
                             }
+
                         } catch (JSONException e) {
                             e.printStackTrace();
                         }
 
                     }
                 };
-                // 서버로 Volley를 이용해서 요청을 함.
-                register_request registerRequest = new register_request(User_ID,User_Password,User_Name,User_Birth,User_Phonenum,User_Email,User_Address, responseListener);
-                RequestQueue queue = Volley.newRequestQueue(register.this);
-                queue.add(registerRequest);
 
+                //서버로 Volley를 이용해서 요청
+                register_request registerRequest = new register_request( User_ID, User_Password, User_Name,User_Birth,User_Phonenum,User_Email,User_Address, responseListener);
+                RequestQueue queue = Volley.newRequestQueue( register.this );
+                queue.add( registerRequest );
             }
         });
-
-
-
     }
 }
+//
+//                Response.Listener<String> responseListener = new Response.Listener<String>() {
+//                    @Override
+//                    public void onResponse(String response) {
+//                        try {
+//                            JSONObject jsonObject = new JSONObject(response);
+//                            boolean success = jsonObject.getBoolean("success");
+//                            if (success) { // 회원등록에 성공한 경우
+//                                Toast.makeText(getApplicationContext(),"회원 등록에 성공하였습니다.",Toast.LENGTH_LONG).show();
+//                                Intent intent = new Intent(register.this, login_page.class);
+//                                startActivity(intent);
+//                            } else { // 회원등록에 실패한 경우
+//                                Toast.makeText(getApplicationContext(),"회원 등록에 실패하였습니다.",Toast.LENGTH_LONG).show();
+//                                return;
+//                            }
+//                        } catch (JSONException e) {
+//                            e.printStackTrace();
+//                        }
+//
+//                    }
+//                };
+//                // 서버로 Volley를 이용해서 요청을 함.
+//                register_request registerRequest = new register_request(User_ID,User_Password,User_Name,User_Birth,User_Phonenum,User_Email,User_Address, responseListener);
+//                RequestQueue queue = Volley.newRequestQueue(register.this);
+//                queue.add(registerRequest);
+//
+//            }
+//        });
+//
+//
+//
+//    }
+//}
