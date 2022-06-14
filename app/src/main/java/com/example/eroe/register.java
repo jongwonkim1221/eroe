@@ -32,7 +32,6 @@ public class register extends AppCompatActivity {
     boolean validate = false;
     AlertDialog dialog;
     Intent intent;
-    String User_ID, User_Password, User_Name, User_Birth, User_Phonenum , User_Email, User_Address;
 
     //시발
     @Override
@@ -135,7 +134,7 @@ public class register extends AppCompatActivity {
             public void onClick(View view) {
                 // EditText에 현재 입력되어있는 값을 get(가져온다)해온다.
                 String User_ID = id_editxt.getText().toString();
-                int User_Password = Integer.parseInt(password_editxt.getText().toString());
+                String User_Password = password_editxt.getText().toString();
                 String User_Name =name_editxt.getText().toString();
                 int User_Birth = Integer.parseInt(birth_editxt.getText().toString());
                 int User_Phonenum = Integer.parseInt(phonenum_editxt.getText().toString());
@@ -149,11 +148,11 @@ public class register extends AppCompatActivity {
                             JSONObject jsonObject = new JSONObject(response);
                             boolean success = jsonObject.getBoolean("success");
                             if (success) { // 회원등록에 성공한 경우
-                                Toast.makeText(getApplicationContext(),"회원 등록에 성공하였습니다.",Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(),"회원 등록에 성공하였습니다.",Toast.LENGTH_LONG).show();
                                 Intent intent = new Intent(register.this, login_page.class);
                                 startActivity(intent);
                             } else { // 회원등록에 실패한 경우
-                                Toast.makeText(getApplicationContext(),"회원 등록에 실패하였습니다.",Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(),"회원 등록에 실패하였습니다.",Toast.LENGTH_LONG).show();
                                 return;
                             }
                         } catch (JSONException e) {
@@ -163,7 +162,7 @@ public class register extends AppCompatActivity {
                     }
                 };
                 // 서버로 Volley를 이용해서 요청을 함.
-                register_request registerRequest = new register_request(User_ID,User_Address,User_Name,User_Birth,User_Phonenum,User_Email, User_Password, responseListener);
+                register_request registerRequest = new register_request(User_ID,User_Password,User_Name,User_Birth,User_Phonenum,User_Email,User_Address, responseListener);
                 RequestQueue queue = Volley.newRequestQueue(register.this);
                 queue.add(registerRequest);
 
