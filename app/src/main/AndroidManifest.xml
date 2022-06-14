@@ -19,8 +19,11 @@
         android:usesCleartextTraffic="true"
         android:networkSecurityConfig="@xml/network_security_config" >
 
+        <activity android:name=".login_page"></activity>
+        <activity android:name=".user_add_page"></activity>
+        <activity android:name=".user_info_page"></activity>
         <activity
-            android:name=".login_page"
+            android:name=".MainActivity"
             android:exported="true">
 
             <intent-filter>
@@ -40,10 +43,6 @@
         <activity android:name=".module_search_page"></activity>
         <activity android:name=".user_info_modify_page"></activity>
         <activity android:name=".register"></activity>
-        <activity android:name=".menu_page"></activity>
-        <activity android:name=".MainActivity"></activity>
-        <activity android:name=".user_add_page"></activity>
-        <activity android:name=".user_info_page"></activity>
 
 
         <meta-data android:name="com.kakao.sdk.AppKey" android:value="b9db38bdcbe294d8902eb53180f04402"/>

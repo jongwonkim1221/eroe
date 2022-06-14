@@ -24,6 +24,8 @@ public class register_request extends StringRequest {
         map.put("User_ID", User_ID);
         map.put("User_Password", User_Password);
         map.put("User_Name", User_Name);
+        map.put("User_Birth", User_Birth + "");
+        map.put("User_Phonenum", User_Phonenum + "");
         map.put("User_Email", User_Email);
         map.put("User_Address", User_Address);
 
