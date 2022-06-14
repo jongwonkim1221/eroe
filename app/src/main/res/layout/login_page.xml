@@ -154,7 +154,7 @@
         android:id="@+id/signup_bt"
         android:layout_width="350dp"
         android:layout_height="45dp"
-        android:background="@drawable/edge"
+        android:background="@color/black"
         android:scaleType="centerInside"
         android:text="회원가입"
         android:textColor="@color/white"
