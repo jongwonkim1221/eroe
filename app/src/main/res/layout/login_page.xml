@@ -79,10 +79,10 @@
         android:background="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.078" />
+        app:layout_constraintVertical_bias="0.982" />
 
     <TextView
         android:id="@+id/login_txt"
@@ -96,33 +96,7 @@
         app:layout_constraintHorizontal_bias="0.048"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/logo_bt2"
-        app:layout_constraintVertical_bias="0.294" /><![CDATA[
-
-
-        app:layout_constraintTop_toBottomOf="@+id/view5"
-        app:layout_constraintVertical_bias="0.019" />
-
-
-
-
-        app:layout_constraintHorizontal_bias="0.095"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view5"
-        app:layout_constraintVertical_bias="1.0" />
-
-
-
-
-
-
-
-
-
-
-
-
-
-    ]]>
+        app:layout_constraintVertical_bias="0.294" />
 
     <TextView
         android:id="@+id/id_txt"
@@ -147,13 +121,13 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:text=""
+        android:textColor="@color/black"
         app:layout_constraintBottom_toTopOf="@+id/password_txt"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.59"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/id_txt"
         app:layout_constraintVertical_bias="1.0" />
-        app:layout_constraintVertical_bias="0.526" />
 
     <TextView
         android:id="@+id/password_txt"
@@ -168,52 +142,7 @@
         app:layout_constraintHorizontal_bias="0.095"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/logo_bt2"
-        app:layout_constraintVertical_bias="1.0" /><![CDATA[
-
-
-
-
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view5"
         app:layout_constraintVertical_bias="1.0" />
-
-
-
-    app:layout_constraintVertical_bias="0.723" />
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    ]]>
 
     <EditText
         android:id="@+id/input_pw"
@@ -222,29 +151,13 @@
         android:layout_marginTop="268dp"
         android:background="@drawable/edge"
         android:ems="10"
+        android:text=""
+        android:textColor="@color/black"
         android:inputType="textPassword"
-        app:layout_constraintBottom_toTopOf="@+id/find_pw"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view5"
-        app:layout_constraintVertical_bias="0.802" />
-
-    <Button
-        android:id="@+id/find_pw"
-        android:layout_width="85dp"
-        android:layout_height="20dp"
-        android:layout_marginBottom="28dp"
-        android:background="@android:color/transparent"
-        android:text="비밀번호 찾기"
-        android:textColor="@color/black"
-        app:layout_constraintBottom_toTopOf="@+id/login_bt"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view5"
-        app:layout_constraintVertical_bias="0.111" />
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toBottomOf="@+id/view5" />
 
     <Button
         android:id="@+id/find_id"
@@ -274,7 +187,6 @@
         app:layout_constraintStart_toEndOf="@+id/find_id"
         app:layout_constraintTop_toBottomOf="@+id/input_pw"
         app:layout_constraintVertical_bias="0.8" />
-        app:layout_constraintVertical_bias="0.662" />
 
     <Button
         android:id="@+id/login_bt"
