@@ -20,7 +20,6 @@
         <entry key="..\:/Users/412-06/AndroidStudioProjects/eroe/app/src/main/res/layout/notice.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/412-06/AndroidStudioProjects/eroe/app/src/main/res/layout/notice_page.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/412-06/AndroidStudioProjects/eroe/app/src/main/res/layout/qna_page.xml" value="0.36614583333333334" />
-        <entry key="..\:/Users/412-06/AndroidStudioProjects/eroe/app/src/main/res/layout/register.xml" value="0.33" />
         <entry key="..\:/Users/412-06/AndroidStudioProjects/eroe/app/src/main/res/layout/register.xml" value="0.254981884057971" />
         <entry key="..\:/Users/412-06/AndroidStudioProjects/eroe/app/src/main/res/layout/sample.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/412-06/AndroidStudioProjects/eroe/app/src/main/res/layout/service_center_page.xml" value="0.36614583333333334" />
@@ -55,14 +54,11 @@
         <entry key="..\:/Users/412-07/AndroidStudioProjects/eroe/app/src/main/res/layout/user_add_page.xml" value="0.358695652173913" />
         <entry key="..\:/Users/412-07/AndroidStudioProjects/eroe/app/src/main/res/layout/user_info_modify_page.xml" value="0.358695652173913" />
         <entry key="..\:/Users/412-07/AndroidStudioProjects/eroe/app/src/main/res/layout/user_info_page.xml" value="0.358695652173913" />
-        <entry key="..\:/Users/412-08/AndroidStudioProjects/eroe/app/src/main/res/layout/activity_main.xml" value="0.33" />
-        <entry key="..\:/Users/412-08/AndroidStudioProjects/eroe/app/src/main/res/layout/declaration_page.xml" value="0.14739583333333334" />
-        <entry key="..\:/Users/412-08/AndroidStudioProjects/eroe/app/src/main/res/layout/login_page.xml" value="0.16590678824721378" />
-        <entry key="..\:/Users/412-08/AndroidStudioProjects/eroe/app/src/main/res/layout/menu_page.xml" value="0.33" />
         <entry key="..\:/Users/412-08/AndroidStudioProjects/eroe/app/src/main/res/drawable/circle.xml" value="0.3" />
         <entry key="..\:/Users/412-08/AndroidStudioProjects/eroe/app/src/main/res/drawable/edge.xml" value="0.3" />
         <entry key="..\:/Users/412-08/AndroidStudioProjects/eroe/app/src/main/res/drawable/ic_launcher_background.xml" value="0.3" />
         <entry key="..\:/Users/412-08/AndroidStudioProjects/eroe/app/src/main/res/drawable/round.xml" value="0.3" />
+        <entry key="..\:/Users/412-08/AndroidStudioProjects/eroe/app/src/main/res/layout/activity_login.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/412-08/AndroidStudioProjects/eroe/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/Users/412-08/AndroidStudioProjects/eroe/app/src/main/res/layout/declaration_page.xml" value="0.14739583333333334" />
         <entry key="..\:/Users/412-08/AndroidStudioProjects/eroe/app/src/main/res/layout/inquiry_page.xml" value="0.328125" />
@@ -71,17 +67,14 @@
         <entry key="..\:/Users/412-08/AndroidStudioProjects/eroe/app/src/main/res/layout/menu_page.xml" value="0.33" />
         <entry key="..\:/Users/412-08/AndroidStudioProjects/eroe/app/src/main/res/layout/module_search_page.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/412-08/AndroidStudioProjects/eroe/app/src/main/res/layout/my_info_modify_page.xml" value="0.1636271529888551" />
-        <entry key="..\:/Users/412-08/AndroidStudioProjects/eroe/app/src/main/res/layout/register.xml" value="0.2" />
         <entry key="..\:/Users/412-08/AndroidStudioProjects/eroe/app/src/main/res/layout/my_page.xml" value="0.14739583333333334" />
         <entry key="..\:/Users/412-08/AndroidStudioProjects/eroe/app/src/main/res/layout/register.xml" value="0.25" />
         <entry key="..\:/Users/412-08/AndroidStudioProjects/eroe/app/src/main/res/layout/register.xml.xml" value="0.16979166666666667" />
         <entry key="..\:/Users/412-08/AndroidStudioProjects/eroe/app/src/main/res/layout/setting.xml" value="0.33" />
         <entry key="..\:/Users/412-08/AndroidStudioProjects/eroe/app/src/main/res/layout/setting_page.xml" value="0.25" />
         <entry key="..\:/Users/412-08/AndroidStudioProjects/eroe/app/src/main/res/layout/setting_servicecenter.xml" value="0.16590678824721378" />
-        <entry key="..\:/Users/412-08/AndroidStudioProjects/eroe/app/src/main/res/layout/user_info_modify_page.xml" value="0.36614583333333334" />
-        <entry key="..\:/Users/412-08/AndroidStudioProjects/eroe/app/src/main/res/layout/user_info_page.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/412-08/AndroidStudioProjects/eroe/app/src/main/res/layout/user_info_modify_page.xml" value="0.33" />
-        <entry key="..\:/Users/412-08/AndroidStudioProjects/eroe/app/src/main/res/layout/user_info_page.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/412-08/AndroidStudioProjects/eroe/app/src/main/res/layout/user_info_page.xml" value="0.1" />
         <entry key="..\:/androidproject/eroe/app/src/main/res/layout/activity_main.xml" value="0.3619791666666667" />
         <entry key="..\:/androidproject/eroe/app/src/main/res/layout/declaration_page.xml" value="0.3619791666666667" />
         <entry key="..\:/androidproject/eroe/app/src/main/res/layout/inquiry_page.xml" value="0.3619791666666667" />

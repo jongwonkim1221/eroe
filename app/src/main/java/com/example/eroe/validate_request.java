@@ -10,14 +10,14 @@ import java.util.Map;
 
 public class validate_request extends StringRequest {
     //서버 url 설정(php파일 연동)
-    final static  private String URL="http://dbconnect.iptime.org/validate.php";
+    final static  private String URL="http://116.45.105.122/validate.php";
     private Map<String,String> map;
 
     public validate_request(String User_ID, Response.Listener<String>listener){
         super(Method.POST,URL,listener,null);
 
         map=new HashMap<>();
-        map.put("userID",User_ID);
+        map.put("User_ID",User_ID);
     }
 
     @Override

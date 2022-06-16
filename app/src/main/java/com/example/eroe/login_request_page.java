@@ -3,8 +3,9 @@ package com.example.eroe;
 
 
 import com.android.volley.AuthFailureError;
-import com.android.volley.toolbox.StringRequest;
 import com.android.volley.Response;
+import com.android.volley.toolbox.StringRequest;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -12,7 +13,7 @@ public class login_request_page  extends StringRequest {
 
 
 // 서버 URL 설정 ( PHP 파일 연동 )
-final static private String URL = "116.45.105.122/login.php";
+final static private String URL = "http://116.45.105.122/login.php";
 private Map<String, String> map;
 
 

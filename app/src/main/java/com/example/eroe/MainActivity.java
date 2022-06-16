@@ -1,14 +1,10 @@
 package com.example.eroe;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
-
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.namespace.R;
-
-
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -25,8 +21,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void run() {
 
-                Intent intent= new Intent(getApplicationContext(), login_page.class);
-                startActivity(intent);  //Loagin화면을 띄운다.
+                Intent intent= new Intent(MainActivity.this, login_page.class);
+                startActivity(intent);  //Login화면을 띄운다.
                 finish();   //현재 액티비티 종료
             }
         }, 2000); // 화면에 Logo 2초간 보이기

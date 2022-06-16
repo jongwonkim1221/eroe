@@ -76,7 +76,7 @@ public class login_page extends AppCompatActivity {
                                 String User_ID = jsonObject.getString("User_ID");
                                 String User_Password = jsonObject.getString("User_Password");
                                 Toast.makeText(getApplicationContext(), "로그인에 성공하였습니다.", Toast.LENGTH_SHORT).show();
-                                Intent intent = new Intent(login_page.this, MainActivity.class);
+                                Intent intent = new Intent(login_page.this, location.class);
                                 intent.putExtra("User_ID", User_ID);
                                 intent.putExtra("User_Password", User_Password);
                                 startActivity(intent);
@@ -96,68 +96,5 @@ public class login_page extends AppCompatActivity {
         });
 
 
-//        logo_bt.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-//                startActivity(intent);
-//
-//
-//            }
-//
-//        });
-//        notice_bt.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent(getApplicationContext(), notice_page.class);
-//                startActivity(intent);
-//
-//            }
-//        });
-//        profile_bt.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent(getApplicationContext(), my_page.class);
-//                startActivity(intent);
-//            }
-//        });
-//        menu_bt.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent(getApplicationContext(), menu_page.class);
-//            }
-//        });
-        logo_bt.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-                startActivity(intent);
-
-
-            }
-
-        });
-        notice_bt.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), notice_page.class);
-                startActivity(intent);
-
-            }
-        });
-        profile_bt.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), my_page.class);
-                startActivity(intent);
-            }
-        });
-        menu_bt.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), menu_page.class);
-            }
-        });
     }
 }
-
