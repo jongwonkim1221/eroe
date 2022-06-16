@@ -9,6 +9,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.android.volley.RequestQueue;
@@ -77,9 +78,14 @@ public class login_page extends AppCompatActivity {
                                 intent.putExtra("User_ID", User_ID);
                                 intent.putExtra("User_Password", User_Password);
                                 startActivity(intent);
+
                             } else { // 로그인에 실패한 경우
-                                Toast.makeText(getApplicationContext(), "로그인에 실패하였습니다.", Toast.LENGTH_SHORT).show();
-                                return;
+                                AlertDialog.Builder builder = new AlertDialog.Builder(login_page.this);
+                                builder.setMessage("로그인에 실패하였습니다.")
+                                        .setNegativeButton("다시 시도",null)
+                                        .create()
+                                        .show();
+
                             }
                         } catch (JSONException e) {
                             e.printStackTrace();

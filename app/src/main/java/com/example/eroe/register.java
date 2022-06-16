@@ -26,7 +26,7 @@ import org.json.JSONObject;
 public class register extends AppCompatActivity {
     ImageButton logo_bt, notice_bt, profile_bt, menu_bt;
     TextView modify_txt, id_txt, password_txt, passwordc_txt, name_txt, birth_txt, gender_txt, phonenum_txt, email_txt, address_txt;
-    EditText id_editxt, password_editxt, passwordc_editxt, name_editxt, birth_editxt, phonenum_editxt, email_editxt, address_editxt;
+    EditText id_editxt, password_editxt, passwc, name_editxt, birth_editxt, phonenum_editxt, email_editxt, address_editxt;
     Button check_bt, join_bt;
     RadioButton male_bt, female_bt;
     boolean validate = false;
@@ -55,7 +55,7 @@ public class register extends AppCompatActivity {
         address_txt = (TextView) findViewById(R.id.address_txt);
         id_editxt = (EditText) findViewById(R.id.id_editxt);
         password_editxt = (EditText) findViewById(R.id.password_editxt);
-        passwordc_editxt = (EditText) findViewById(R.id.passwordc_editxt);
+        passwc = (EditText) findViewById(R.id.passwc);
         name_editxt = (EditText) findViewById(R.id.name_editxt);
         birth_editxt = (EditText) findViewById(R.id.birth_editxt);
         phonenum_editxt = (EditText) findViewById(R.id.phonenum_editxt);
@@ -71,7 +71,7 @@ public class register extends AppCompatActivity {
         password_editxt = findViewById(R.id.password_editxt);
         name_editxt = findViewById(R.id.name_editxt);
         birth_editxt = findViewById(R.id.birth_editxt);
-        passwordc_editxt = findViewById(R.id.passwordc_editxt);
+        passwc = findViewById(R.id.passwc);
         phonenum_editxt = findViewById(R.id.phonenum_editxt);
         email_editxt = findViewById(R.id.email_editxt);
         address_editxt = findViewById(R.id.address_editxt);
@@ -86,9 +86,7 @@ public class register extends AppCompatActivity {
                 }
                 if(User_ID.equals("")){
                     AlertDialog.Builder builder = new AlertDialog.Builder(register.this);
-                    dialog = builder.setMessage("아이디를 입력하세요.")
-                            .setPositiveButton("확인",null)
-                            .create();
+                    dialog = builder.setMessage("아이디를 입력하세요.").setPositiveButton("확인",null).create();
                             dialog.show();
                             return;
                 }
@@ -100,9 +98,7 @@ public class register extends AppCompatActivity {
                             boolean success = jsonResponse.getBoolean("success");
                             if(success) {
                                 AlertDialog.Builder builder = new AlertDialog.Builder(register.this);
-                                dialog = builder.setMessage("사용 가능한 아이디입니다.")
-                                        .setPositiveButton("확인",null)
-                                        .create();
+                                dialog = builder.setMessage("사용 가능한 아이디입니다.").setPositiveButton("확인",null).create();
                                 dialog.show();
                                 id_editxt.setEnabled(false);
                                 validate = true;
@@ -134,11 +130,12 @@ public class register extends AppCompatActivity {
                 // EditText에 현재 입력되어있는 값을 get(가져온다)해온다.
                 final String User_ID = id_editxt.getText().toString();
                 final String User_Password = password_editxt.getText().toString();
-                final String User_Name =name_editxt.getText().toString();
-                final String User_Birth = (birth_editxt.getText().toString());
-                final String User_Phonenum = (phonenum_editxt.getText().toString());
+                final String User_Name = name_editxt.getText().toString();
+                final String User_Birth = birth_editxt.getText().toString();
+                final String User_Phonenum = phonenum_editxt.getText().toString();
                 final String User_Email = email_editxt.getText().toString();
                 final String User_Address = address_editxt.getText().toString();
+                final String passwc = passwordc_txt.getText().toString();
 
 
                 //아이디 중복체크 했는지 확인
@@ -150,7 +147,7 @@ public class register extends AppCompatActivity {
                 }
 
                 //한 칸이라도 입력 안했을 경우
-                if (User_ID.equals("") || User_Password.equals("") || User_Name.equals("") || User_Birth.equals("")|| User_Phonenum.equals("")||User_Email.equals("")||User_Address.equals("")) {
+                if (User_ID.equals("") || User_Password.equals("") || User_Name.equals("") || User_Birth.equals("") || User_Phonenum.equals("") || User_Email.equals("") || User_Address.equals("")) {
                     AlertDialog.Builder builder = new AlertDialog.Builder(register.this);
                     dialog = builder.setMessage("모두 입력해주세요.").setNegativeButton("확인", null).create();
                     dialog.show();
@@ -162,30 +159,30 @@ public class register extends AppCompatActivity {
                     public void onResponse(String response) {
 
                         try {
-                            JSONObject jsonObject = new JSONObject( response );
-                            boolean success = jsonObject.getBoolean( "success" );
+                            JSONObject jsonObject = new JSONObject(response);
+                            boolean success = jsonObject.getBoolean("success");
 
                             //회원가입 성공시
-                            if(User_Password.equals("")) {
-                                if (success) {
-
-                                    Toast.makeText(getApplicationContext(), String.format("%s님 가입을 환영합니다.", User_Name), Toast.LENGTH_SHORT).show();
-                                    Intent intent = new Intent(register.this, login_page.class);
-                                    startActivity(intent);
-
-                                    //회원가입 실패시
-                                } else {
-                                    Toast.makeText(getApplicationContext(), "회원가입에 실패하였습니다.", Toast.LENGTH_SHORT).show();
-                                    return;
-                                }
+                            if (success) {
+                                AlertDialog.Builder builder = new AlertDialog.Builder(register.this);
+                                builder.setMessage("회원 등록에 성공했습니다.")
+                                        .setPositiveButton("확인", null)
+                                        .create()
+                                        .show();
+                                Intent intent = new Intent(register.this, login_page.class);
+                                register.this.startActivity(intent);
                             } else {
                                 AlertDialog.Builder builder = new AlertDialog.Builder(register.this);
-                                dialog = builder.setMessage("비밀번호가 동일하지 않습니다.").setNegativeButton("확인", null).create();
-                                dialog.show();
-                                return;
+                                builder.setMessage("회원 등록에 실패했습니다.")
+                                        .setNegativeButton("다시 시도", null)
+                                        .create()
+                                        .show();
                             }
+                        }
 
-                        } catch (JSONException e) {
+
+                         catch (JSONException e)
+                         {
                             e.printStackTrace();
                         }
 
@@ -200,6 +197,8 @@ public class register extends AppCompatActivity {
         });
     }
 }
+
+
 //
 //                Response.Listener<String> responseListener = new Response.Listener<String>() {
 //                    @Override
