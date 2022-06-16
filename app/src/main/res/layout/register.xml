@@ -135,7 +135,7 @@
         android:background="@color/black"
         android:text="중복확인"
         android:textColor="@color/white"
-        android:textSize="17sp"
+        android:textSize="13sp"
         app:layout_constraintBottom_toBottomOf="@+id/id_editxt"
         app:layout_constraintEnd_toEndOf="@+id/id_editxt"
         app:layout_constraintHorizontal_bias="1.0"
@@ -253,12 +253,14 @@
             android:id="@+id/male_bt"
             android:layout_width="87dp"
             android:layout_height="46dp"
+            android:textColor="@color/black"
             android:text="남자" />
 
         <RadioButton
             android:id="@+id/female_bt"
             android:layout_width="87dp"
             android:layout_height="46dp"
+            android:textColor="@color/black"
             android:text="여자" />
     </RadioGroup>
 
