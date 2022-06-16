@@ -35,6 +35,7 @@
         <activity android:name=".declaration_page" />
         <activity android:name=".setting_page" />
         <activity android:name=".inquiry_page" />
+        <activity android:name=".menu_page" />
         <activity android:name=".my_info_modify_page" />
         <activity android:name=".service_center_page" />
         <activity android:name=".location" />

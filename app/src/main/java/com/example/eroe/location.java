@@ -5,12 +5,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -118,7 +116,6 @@ public class location extends AppCompatActivity {
                     case R.id.button7:
                         r = new Intent(getApplicationContext(), user_add_page.class);
                         startActivity(r);
-                        //Toast.makeText(getApplicationContext(), "사용자 추가가 완료 되었습니다.", Toast.LENGTH_LONG).show();
                         break;
                 }
             }

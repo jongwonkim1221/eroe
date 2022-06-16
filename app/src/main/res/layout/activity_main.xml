@@ -20,20 +20,5 @@
         app:layout_constraintVertical_bias="0.462"
         app:srcCompat="@drawable/eroe" />
 
-    <TextView
-        android:id="@+id/te7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="64dp"
-        android:text="Loading....."
-        android:textColor="#47FC67"
-        android:textSize="46sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.551"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/img_eroe"
-        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
