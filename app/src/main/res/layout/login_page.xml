@@ -79,40 +79,10 @@
         android:background="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" /><![CDATA[
-
-
-
-
-        app:layout_constraintTop_toBottomOf="@+id/view5"
-        app:layout_constraintVertical_bias="0.019" />
-
-
-
-
-        app:layout_constraintHorizontal_bias="0.095"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view5"
-        app:layout_constraintVertical_bias="1.0" />
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    ]]>
+        app:layout_constraintVertical_bias="0.982" />
 
     <TextView
         android:id="@+id/login_txt"
@@ -126,6 +96,7 @@
         app:layout_constraintHorizontal_bias="0.048"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/logo_bt2"
+        app:layout_constraintVertical_bias="0.294" />
         app:layout_constraintVertical_bias="0.162" /><![CDATA[
 
 
@@ -144,12 +115,11 @@
         android:text="아이디"
         android:textColor="@color/black"
         android:textSize="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/password_txt"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.088"
+        app:layout_constraintHorizontal_bias="0.091"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view5"
-        app:layout_constraintVertical_bias="0.793" />
+        app:layout_constraintTop_toBottomOf="@+id/menu_bt2"
+        app:layout_constraintVertical_bias="1.0" />
 
     <EditText
         android:id="@+id/input_id"
@@ -159,7 +129,7 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:text=""
-        app:layout_constraintBottom_toTopOf="@+id/password_txt"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
@@ -174,55 +144,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view5"
         app:layout_constraintVertical_bias="1.0" />
-
-
-
-    app:layout_constraintVertical_bias="0.723" />
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    ]]>
+        app:layout_constraintVertical_bias="0.526" />
 
     <TextView
         android:id="@+id/password_txt"
         android:layout_width="86dp"
         android:layout_height="27dp"
+        android:layout_marginBottom="8dp"
         android:text="비밀번호"
         android:textColor="@color/black"
         android:textSize="20dp"
@@ -230,12 +158,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.095"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view5"
-        app:layout_constraintVertical_bias="1.0" /><![CDATA[
-
-
-
-    app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toBottomOf="@+id/logo_bt2"
+        app:layout_constraintVertical_bias="1.0" />
 
 
 
@@ -248,32 +172,18 @@
         android:layout_marginTop="268dp"
         android:background="@drawable/edge"
         android:ems="10"
+        android:text=""
+        android:textColor="@color/black"
         android:inputType="textPassword"
-        app:layout_constraintBottom_toTopOf="@+id/login_bt"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view5"
-        app:layout_constraintVertical_bias="0.0" /><![CDATA[
-
-
-
-    app:layout_constraintVertical_bias="0.662" />
-
-
-
-
-
-
-
-
-
-    ]]>
+        app:layout_constraintTop_toBottomOf="@+id/view5" />
 
     <Button
         android:id="@+id/find_id"
-        android:layout_width="79dp"
-        android:layout_height="25dp"
+        android:layout_width="80dp"
+        android:layout_height="20dp"
         android:background="@android:color/transparent"
         android:text="아이디 찾기"
         android:textColor="@color/black"
@@ -282,21 +192,22 @@
         app:layout_constraintHorizontal_bias="0.09"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/input_pw"
-        app:layout_constraintVertical_bias="0.634" />
+        app:layout_constraintVertical_bias="0.25" />
 
     <Button
         android:id="@+id/find_pw"
         android:layout_width="82dp"
-        android:layout_height="25dp"
+        android:layout_height="23dp"
         android:layout_marginEnd="164dp"
+        android:layout_marginBottom="364dp"
         android:background="@android:color/transparent"
         android:text="비밀번호 찾기"
-        app:layout_constraintBottom_toTopOf="@+id/login_bt"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.02"
         app:layout_constraintStart_toEndOf="@+id/find_id"
         app:layout_constraintTop_toBottomOf="@+id/input_pw"
-        app:layout_constraintVertical_bias="0.627" />
+        app:layout_constraintVertical_bias="0.8" />
 
     <Button
         android:id="@+id/login_bt"
@@ -308,10 +219,10 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.654" />
+        app:layout_constraintVertical_bias="0.596" />
 
     <Button
         android:id="@+id/signup_bt"
