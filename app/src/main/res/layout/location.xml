@@ -112,6 +112,7 @@
         android:background="@android:color/transparent"
         app:layout_constraintBottom_toTopOf="@+id/view11"
         app:layout_constraintEnd_toStartOf="@+id/textView5"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/view10"
         app:layout_constraintTop_toTopOf="@+id/view10"
         app:srcCompat="@drawable/profile2" />
@@ -125,9 +126,10 @@
         android:textSize="25sp"
         app:layout_constraintBottom_toTopOf="@+id/view11"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.46"
+        app:layout_constraintHorizontal_bias="0.391"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/view10" />
+        app:layout_constraintTop_toTopOf="@+id/view10"
+        app:layout_constraintVertical_bias="0.34" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -135,8 +137,10 @@
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toTopOf="@+id/view11"
         app:layout_constraintEnd_toStartOf="@+id/textView6"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/profile_bt3"
         app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/full_battery" />
 
     <TextView
@@ -149,9 +153,10 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/view11"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.439"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:layout_constraintVertical_bias="0.0" />
 
     <View
         android:id="@+id/view11"
@@ -163,7 +168,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/view10"
         app:layout_constraintTop_toBottomOf="@+id/logo_bt"
-        app:layout_constraintVertical_bias="0.919" />
+        app:layout_constraintVertical_bias="0.925" />
 
     <Button
         android:id="@+id/button"
@@ -178,7 +183,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/view11"
         app:layout_constraintTop_toBottomOf="@+id/view11"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.25" />
 
     <View
         android:id="@+id/view12"
@@ -189,7 +194,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.68"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view11" />
+        app:layout_constraintTop_toBottomOf="@+id/view11"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/button5"
@@ -204,7 +210,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/view12"
         app:layout_constraintTop_toTopOf="@+id/view12"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <View
         android:id="@+id/view14"

@@ -57,10 +57,10 @@
         android:textColor="@color/black"
         app:layout_constraintBottom_toTopOf="@+id/login_bt"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view5"
-        app:layout_constraintVertical_bias="0.687" />
+        app:layout_constraintVertical_bias="0.84" />
 
     <EditText
         android:id="@+id/input_id"
@@ -105,7 +105,7 @@
         app:layout_constraintHorizontal_bias="0.085"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view5"
-        app:layout_constraintVertical_bias="0.704" />
+        app:layout_constraintVertical_bias="0.989" />
 
     <Button
         android:id="@+id/login_bt"
@@ -117,10 +117,10 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/signup_bt"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.953" />
+        app:layout_constraintVertical_bias="0.975" />
 
     <Button
         android:id="@+id/signup_bt"
@@ -133,9 +133,9 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view5"
-        app:layout_constraintVertical_bias="0.633" />
+        app:layout_constraintVertical_bias="0.494" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
