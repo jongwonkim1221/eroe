@@ -19,7 +19,7 @@
         android:scaleType="centerInside"
         app:layout_constraintBottom_toTopOf="@+id/view"
         app:layout_constraintEnd_toStartOf="@+id/logo_bt"
-        app:layout_constraintHorizontal_bias="0.137"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/menu" />
@@ -46,6 +46,7 @@
         android:scaleType="centerInside"
         app:layout_constraintBottom_toTopOf="@+id/view"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.89"
         app:layout_constraintStart_toEndOf="@+id/logo_bt"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/notice"
@@ -60,6 +61,7 @@
         android:background="@android:color/transparent"
         android:scaleType="centerInside"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/notice_bt"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/profile"
@@ -109,10 +111,12 @@
         android:text="  공지사항"
         android:textAlignment="textStart"
         android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view2" />
+        app:layout_constraintTop_toBottomOf="@+id/view2"
+        app:layout_constraintVertical_bias="0.001" />
 
     <View
         android:id="@+id/view3"
@@ -130,10 +134,12 @@
         android:text="  버전정보"
         android:textAlignment="textStart"
         android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/setting_notice" />
+        app:layout_constraintTop_toBottomOf="@+id/setting_notice"
+        app:layout_constraintVertical_bias="0.001" />
 
     <View
         android:id="@+id/view4"
@@ -149,10 +155,12 @@
         android:layout_height="54dp"
         android:text="  알람설정"
         android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/version_info" />
+        app:layout_constraintTop_toBottomOf="@+id/version_info"
+        app:layout_constraintVertical_bias="0.0" />
 
     <View
         android:id="@+id/view5"
@@ -170,10 +178,12 @@
         android:text="  고객센터"
         android:textAlignment="textStart"
         android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/switch1" />
+        app:layout_constraintTop_toBottomOf="@+id/switch1"
+        app:layout_constraintVertical_bias="0.002" />
 
     <View
         android:id="@+id/view6"
