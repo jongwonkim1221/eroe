@@ -36,7 +36,7 @@ public class notice_page extends AppCompatActivity {
             public void onClick(View v) {
                 switch (v.getId()) {
                     case R.id.logo_bt:
-                        i = new Intent(getApplicationContext(), MainActivity.class);
+                        i = new Intent(getApplicationContext(), location.class);
                         startActivity(i);
                         break;
                     case R.id.notice_bt:
@@ -52,11 +52,11 @@ public class notice_page extends AppCompatActivity {
                         startActivity(l);
                         break;
                     case R.id.notice1:
-                        m = new Intent(getApplicationContext(), MainActivity.class);
+                        m = new Intent(getApplicationContext(), location.class);
                         startActivity(m);
                         break;
                     case R.id.notice2:
-                        n = new Intent(getApplicationContext(), MainActivity.class);
+                        n = new Intent(getApplicationContext(), location.class);
                         startActivity(n);
                         break;
                 }

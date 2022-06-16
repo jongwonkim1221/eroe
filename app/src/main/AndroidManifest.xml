@@ -22,13 +22,14 @@
         <activity android:name=".login_page"></activity>
         <activity android:name=".user_add_page"></activity>
         <activity android:name=".user_info_page"></activity>
+
+
         <activity
             android:name=".MainActivity"
             android:exported="true">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -40,6 +41,7 @@
         <activity android:name=".inquiry_page"></activity>
         <activity android:name=".my_info_modify_page"></activity>
         <activity android:name=".service_center_page"></activity>
+        <activity android:name=".location"></activity>
         <activity android:name=".module_search_page"></activity>
         <activity android:name=".user_info_modify_page"></activity>
         <activity android:name=".register"></activity>

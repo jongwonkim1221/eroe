@@ -8,6 +8,22 @@
 
 
     <ImageButton
+        android:id="@+id/menu_bt2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/transparent"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@+id/logo_bt2"
+        app:layout_constraintEnd_toStartOf="@+id/logo_bt2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/menu" />
+
+    <ImageButton
         android:id="@+id/logo_bt2"
         android:layout_width="119dp"
         android:layout_height="58dp"
@@ -21,10 +37,45 @@
         app:srcCompat="@drawable/logo"
         tools:ignore="MissingConstraints" />
 
+    <ImageButton
+        android:id="@+id/notice_bt2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="56dp"
+        android:background="@android:color/transparent"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@+id/logo_bt2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/logo_bt2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/notice"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/profile_bt2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@android:color/transparent"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@+id/logo_bt2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/notice_bt2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/profile"
+        tools:ignore="MissingConstraints" />
+
     <View
         android:id="@+id/view5"
         android:layout_width="411dp"
         android:layout_height="1dp"
+        android:layout_marginBottom="672dp"
         android:background="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -45,22 +96,48 @@
         app:layout_constraintHorizontal_bias="0.048"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/logo_bt2"
-        app:layout_constraintVertical_bias="0.38" />
+        app:layout_constraintVertical_bias="0.294" /><![CDATA[
+
+
+        app:layout_constraintTop_toBottomOf="@+id/view5"
+        app:layout_constraintVertical_bias="0.019" />
+
+
+
+
+        app:layout_constraintHorizontal_bias="0.095"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view5"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+    ]]>
 
     <TextView
         android:id="@+id/id_txt"
         android:layout_width="62dp"
         android:layout_height="29dp"
-        android:layout_marginTop="76dp"
+        android:layout_marginBottom="44dp"
         android:text="아이디"
         android:textColor="@color/black"
         android:textSize="20dp"
         app:layout_constraintBottom_toTopOf="@+id/password_txt"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.088"
+        app:layout_constraintHorizontal_bias="0.091"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view5"
-        app:layout_constraintVertical_bias="0.019" />
+        app:layout_constraintTop_toBottomOf="@+id/menu_bt2"
+        app:layout_constraintVertical_bias="1.0" />
 
     <EditText
         android:id="@+id/input_id"
@@ -72,15 +149,17 @@
         android:text=""
         app:layout_constraintBottom_toTopOf="@+id/password_txt"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintHorizontal_bias="0.59"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/id_txt"
+        app:layout_constraintVertical_bias="1.0" />
         app:layout_constraintVertical_bias="0.526" />
 
     <TextView
         android:id="@+id/password_txt"
         android:layout_width="86dp"
         android:layout_height="27dp"
+        android:layout_marginBottom="8dp"
         android:text="비밀번호"
         android:textColor="@color/black"
         android:textSize="20dp"
@@ -88,14 +167,59 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.095"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo_bt2"
+        app:layout_constraintVertical_bias="1.0" /><![CDATA[
+
+
+
+
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view5"
         app:layout_constraintVertical_bias="1.0" />
+
+
+
+    app:layout_constraintVertical_bias="0.723" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    ]]>
 
     <EditText
         android:id="@+id/input_pw"
         android:layout_width="350dp"
         android:layout_height="45dp"
-        android:layout_marginBottom="4dp"
+        android:layout_marginTop="268dp"
         android:background="@drawable/edge"
         android:ems="10"
         android:inputType="textPassword"
@@ -116,9 +240,10 @@
         android:textColor="@color/black"
         app:layout_constraintBottom_toTopOf="@+id/login_bt"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.358"
+        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view5"
+        app:layout_constraintVertical_bias="0.111" />
         app:layout_constraintVertical_bias="1.0" />
 
     <Button
@@ -129,10 +254,26 @@
         android:text="아이디 찾기"
         android:textColor="@color/black"
         app:layout_constraintBottom_toTopOf="@+id/login_bt"
-        app:layout_constraintEnd_toStartOf="@+id/find_pw"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.108"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/input_pw"
+        app:layout_constraintVertical_bias="0.25" />
+
+    <Button
+        android:id="@+id/find_pw"
+        android:layout_width="82dp"
+        android:layout_height="23dp"
+        android:layout_marginEnd="164dp"
+        android:layout_marginBottom="364dp"
+        android:background="@android:color/transparent"
+        android:text="비밀번호 찾기"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.02"
+        app:layout_constraintStart_toEndOf="@+id/find_id"
+        app:layout_constraintTop_toBottomOf="@+id/input_pw"
+        app:layout_constraintVertical_bias="0.8" />
         app:layout_constraintVertical_bias="0.662" />
 
     <Button
@@ -161,9 +302,9 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view5"
-        app:layout_constraintVertical_bias="0.66" />
+        app:layout_constraintVertical_bias="0.683" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
