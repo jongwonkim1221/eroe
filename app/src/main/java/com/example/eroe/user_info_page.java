@@ -51,7 +51,7 @@ public class user_info_page extends AppCompatActivity {
             public void onClick(View v) {
                 switch (v.getId()) {
                     case R.id.logo_bt:
-                        i = new Intent(getApplicationContext(), MainActivity.class);
+                        i = new Intent(getApplicationContext(), location.class);
                         startActivity(i);
                         break;
                     case R.id.notice_bt:
@@ -67,7 +67,7 @@ public class user_info_page extends AppCompatActivity {
                         startActivity(l);
                         break;
                     case R.id.button1:
-                        m = new Intent(getApplicationContext(), MainActivity.class);
+                        m = new Intent(getApplicationContext(), location.class);
                         startActivity(m);
                         break;
                     case R.id.button2:
@@ -75,7 +75,7 @@ public class user_info_page extends AppCompatActivity {
                         startActivity(n);
                         break;
                     case R.id.button3:
-                        o = new Intent(getApplicationContext(), MainActivity.class);
+                        o = new Intent(getApplicationContext(), location.class);
                         startActivity(o);
                         break;
                     case R.id.button4:

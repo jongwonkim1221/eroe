@@ -33,7 +33,7 @@ public class register extends AppCompatActivity {
     AlertDialog dialog;
     Intent intent;
 
-    //시발
+
     @Override
     protected void onCreate(Bundle saveInstanceState) {
         super.onCreate(saveInstanceState);

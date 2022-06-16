@@ -55,7 +55,7 @@ public class setting_page extends AppCompatActivity {
             public void onClick(View v) {
                 switch (v.getId()) {
                     case R.id.logo_bt:
-                        i = new Intent(getApplicationContext(), MainActivity.class);
+                        i = new Intent(getApplicationContext(), location.class);
                         startActivity(i);
                         break;
                     case R.id.notice_bt:
@@ -71,15 +71,15 @@ public class setting_page extends AppCompatActivity {
                         startActivity(l);
                         break;
                     case R.id.setting_notice:
-                        m = new Intent(getApplicationContext(), MainActivity.class);
+                        m = new Intent(getApplicationContext(), location.class);
                         startActivity(m);
                         break;
                     case R.id.version_info:
-                        n = new Intent(getApplicationContext(), MainActivity.class);
+                        n = new Intent(getApplicationContext(), location.class);
                         startActivity(n);
                         break;
                     case R.id.service_center:
-                        n = new Intent(getApplicationContext(), MainActivity.class);
+                        n = new Intent(getApplicationContext(), location.class);
                         startActivity(n);
                         break;
                 }
