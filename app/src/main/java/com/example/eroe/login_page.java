@@ -37,13 +37,16 @@ public class login_page extends AppCompatActivity {
         notice_bt = (ImageView) findViewById(R.id.notice_bt);
         profile_bt = (ImageView) findViewById(R.id.profile_bt);
         logo_bt = (ImageView) findViewById(R.id.logo_bt);
+
         input_id = (EditText) findViewById(R.id.input_id);
         input_pw = (EditText) findViewById(R.id.input_pw);
         login_txt = (TextView) findViewById(R.id.login_txt);
         id_txt = (TextView) findViewById(R.id.id_txt);
         password_txt = (TextView) findViewById(R.id.password_txt);
+
         find_id = (Button) findViewById(R.id.find_id);
         find_pw = (Button) findViewById(R.id.find_pw);
+
         login_bt = (Button) findViewById(R.id.login_bt);
         signup_bt = (Button) findViewById(R.id.signup_bt);
 
