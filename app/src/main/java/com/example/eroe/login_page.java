@@ -24,7 +24,7 @@ public class login_page extends AppCompatActivity {
     ImageView menu_bt, notice_bt, profile_bt, logo_bt;
     EditText input_id, input_pw;
     TextView login_txt, id_txt, password_txt;
-    Button find_id, find_pw, login_bt, signup_bt;
+    Button login_bt, signup_bt;
 
 
     @Override
