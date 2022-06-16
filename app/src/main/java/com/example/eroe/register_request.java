@@ -16,7 +16,7 @@ public class register_request extends StringRequest {
     //private Map<String, String>parameters;
 
 
-    public register_request(String User_ID, String User_Password, String User_Name, int User_Birth, int User_Phonenum, String User_Email, String User_Address, Response.Listener<String> listener) {
+    public register_request(String User_ID, String User_Password, String User_Name,String User_Birth, String User_Phonenum, String User_Email, String User_Address, Response.Listener<String> listener) {
         super(Method.POST, URL, listener, null);
 
         map = new HashMap<>();
@@ -24,8 +24,8 @@ public class register_request extends StringRequest {
         map.put("User_ID", User_ID);
         map.put("User_Password", User_Password);
         map.put("User_Name", User_Name);
-        map.put("User_Birth", User_Birth + "");
-        map.put("User_Phonenum", User_Phonenum + "");
+        map.put("User_Birth", User_Birth);
+        map.put("User_Phonenum", User_Phonenum);
         map.put("User_Email", User_Email);
         map.put("User_Address", User_Address);
 

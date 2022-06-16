@@ -135,8 +135,8 @@ public class register extends AppCompatActivity {
                 final String User_ID = id_editxt.getText().toString();
                 final String User_Password = password_editxt.getText().toString();
                 final String User_Name =name_editxt.getText().toString();
-                int User_Birth = Integer.parseInt(birth_editxt.getText().toString());
-                int User_Phonenum = Integer.parseInt(phonenum_editxt.getText().toString());
+                final String User_Birth = (birth_editxt.getText().toString());
+                final String User_Phonenum = (phonenum_editxt.getText().toString());
                 final String User_Email = email_editxt.getText().toString();
                 final String User_Address = address_editxt.getText().toString();
 
@@ -150,7 +150,7 @@ public class register extends AppCompatActivity {
                 }
 
                 //한 칸이라도 입력 안했을 경우
-                if (User_ID.equals("") || User_Password.equals("") || User_Name.equals("")) {
+                if (User_ID.equals("") || User_Password.equals("") || User_Name.equals("") || User_Birth.equals("")|| User_Phonenum.equals("")||User_Email.equals("")||User_Address.equals("")) {
                     AlertDialog.Builder builder = new AlertDialog.Builder(register.this);
                     dialog = builder.setMessage("모두 입력해주세요.").setNegativeButton("확인", null).create();
                     dialog.show();

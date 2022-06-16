@@ -80,7 +80,7 @@ public class location extends AppCompatActivity {
             public void onClick(View v) {
                 switch (v.getId()) {
                     case R.id.logo_bt:
-                        i = new Intent(getApplicationContext(), MainActivity.class);
+                        i = new Intent(getApplicationContext(), location.class);
                         startActivity(i);
                         break;
                     case R.id.notice_bt:
@@ -104,7 +104,7 @@ public class location extends AppCompatActivity {
                         startActivity(n);
                         break;
                     case R.id.button:
-                        o = new Intent(getApplicationContext(), MainActivity.class);
+                        o = new Intent(getApplicationContext(), location.class);
                         startActivity(o);
                         break;
                     case R.id.button5:
