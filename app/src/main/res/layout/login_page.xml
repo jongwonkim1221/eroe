@@ -8,22 +8,6 @@
 
 
     <ImageButton
-        android:id="@+id/menu_bt"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:background="@android:color/transparent"
-        android:scaleType="centerInside"
-        app:layout_constraintBottom_toBottomOf="@+id/logo_bt"
-        app:layout_constraintEnd_toStartOf="@+id/logo_bt"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/menu" />
-
-    <ImageButton
         android:id="@+id/logo_bt"
         android:layout_width="119dp"
         android:layout_height="58dp"
@@ -35,52 +19,17 @@
         app:srcCompat="@drawable/logo"
         tools:ignore="MissingConstraints" />
 
-    <ImageButton
-        android:id="@+id/notice_bt"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="56dp"
-        android:background="@android:color/transparent"
-        android:scaleType="centerInside"
-        app:layout_constraintBottom_toBottomOf="@+id/logo_bt"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/logo_bt"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/notice"
-        tools:ignore="MissingConstraints" />
-
-    <ImageButton
-        android:id="@+id/profile_bt"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:background="@android:color/transparent"
-        android:scaleType="centerInside"
-        app:layout_constraintBottom_toBottomOf="@+id/logo_bt"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/notice_bt"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/profile"
-        tools:ignore="MissingConstraints" />
-
     <View
         android:id="@+id/view5"
         android:layout_width="411dp"
         android:layout_height="1dp"
-        android:layout_marginBottom="672dp"
         android:background="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.982" />
+        app:layout_constraintVertical_bias="0.079" />
 
     <TextView
         android:id="@+id/login_txt"
