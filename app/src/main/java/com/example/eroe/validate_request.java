@@ -14,7 +14,7 @@ public class validate_request extends StringRequest {
     private Map<String,String> map;
 
     public validate_request(String User_ID, Response.Listener<String>listener){
-        super(Request.Method.POST,URL,listener,null);
+        super(Method.POST,URL,listener,null);
 
         map=new HashMap<>();
         map.put("userID",User_ID);

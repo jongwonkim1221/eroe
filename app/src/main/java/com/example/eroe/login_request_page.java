@@ -22,11 +22,10 @@ public login_request_page(String User_ID, String User_Password, Response.Listene
         map = new HashMap<>();
         map.put("User_ID",User_ID);
         map.put("User_Password", User_Password);
-
-        }
+}
 
 @Override
 protected Map<String, String> getParams() throws AuthFailureError {
         return map;
+        }
 }
-        };

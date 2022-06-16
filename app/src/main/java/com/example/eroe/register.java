@@ -33,7 +33,7 @@ public class register extends AppCompatActivity {
     AlertDialog dialog;
     Intent intent;
 
-    //시발
+
     @Override
     protected void onCreate(Bundle saveInstanceState) {
         super.onCreate(saveInstanceState);
@@ -81,8 +81,7 @@ public class register extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String User_ID = id_editxt.getText().toString();
-                if(validate)
-                {
+                if(validate) {
                     return;
                 }
                 if(User_ID.equals("")){
@@ -101,18 +100,18 @@ public class register extends AppCompatActivity {
                             boolean success = jsonResponse.getBoolean("success");
                             if(success) {
                                 AlertDialog.Builder builder = new AlertDialog.Builder(register.this);
-                                dialog = builder.setMessage("사용 불가능한 아이디 입니다.")
+                                dialog = builder.setMessage("사용 가능한 아이디입니다.")
                                         .setPositiveButton("확인",null)
                                         .create();
                                 dialog.show();
                                 id_editxt.setEnabled(false);
                                 validate = true;
-                                check_bt.setText("확인");
+                                //check_bt.setBackgroundColor(getResources().getColor(R.color.colorGray));
                             }
                             else{
                                 AlertDialog.Builder builder = new AlertDialog.Builder(register.this);
-                                dialog = builder.setMessage("사용 가능한 아이디 입니다.")
-                                        .setPositiveButton("확인",null)
+                                dialog = builder.setMessage("사용 불가능한 아이디 입니다.")
+                                        .setNegativeButton("확인",null)
                                         .create();
                                 dialog.show();
                             }
