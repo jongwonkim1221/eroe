@@ -44,9 +44,6 @@ public class login_page extends AppCompatActivity {
         id_txt = (TextView) findViewById(R.id.id_txt);
         password_txt = (TextView) findViewById(R.id.password_txt);
 
-        find_id = (Button) findViewById(R.id.find_id);
-        find_pw = (Button) findViewById(R.id.find_pw);
-
         login_bt = (Button) findViewById(R.id.login_bt);
         signup_bt = (Button) findViewById(R.id.signup_bt);
 
