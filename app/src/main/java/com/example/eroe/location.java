@@ -50,10 +50,11 @@ public class location extends AppCompatActivity {
         button6 = (Button) findViewById(R.id.button6);
         button7 = (Button) findViewById(R.id.button7);
 
-        mapview = new MapView(this);
+        MapView mapview = new MapView(this);
 
         ViewGroup mapViewContainer = (ViewGroup) findViewById(R.id.map_view);
         mapViewContainer.addView(mapview);
+
 
         /*마커 추가*/
         //마커 찍기
@@ -132,8 +133,3 @@ public class location extends AppCompatActivity {
         button7.setOnClickListener(cl);
     }
 }
-
-
-
-
-//네이티브 키 값 : b9db38bdcbe294d8902eb53180f04402

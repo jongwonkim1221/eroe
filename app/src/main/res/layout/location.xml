@@ -84,10 +84,9 @@
 
     <RelativeLayout
         android:id="@+id/map_view"
-        android:layout_width="377dp"
-        android:layout_height="461dp"
+        android:layout_width="375dp"
+        android:layout_height="443dp"
         android:layout_marginTop="12dp"
-        android:background="@drawable/edge"
         app:layout_constraintBottom_toTopOf="@+id/view10"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
