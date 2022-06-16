@@ -10,7 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.namespace.R;
 
-public class menu_page  extends AppCompatActivity {
+public class menu_page extends AppCompatActivity {
 
     ImageButton logo_bt, notice_bt, profile_bt, menu_bt;
     Button menu1, menu2, menu3, menu4;
@@ -38,7 +38,7 @@ public class menu_page  extends AppCompatActivity {
             public void onClick(View v) {
                 switch (v.getId()) {
                     case R.id.logo_bt:
-                        i = new Intent(getApplicationContext(), MainActivity.class);
+                        i = new Intent(getApplicationContext(), location.class);
                         startActivity(i);
                         break;
                     case R.id.notice_bt:

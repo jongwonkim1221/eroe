@@ -79,7 +79,7 @@ public class setting_page extends AppCompatActivity {
                         startActivity(n);
                         break;
                     case R.id.service_center:
-                        n = new Intent(getApplicationContext(), location.class);
+                        n = new Intent(getApplicationContext(), service_center_page.class);
                         startActivity(n);
                         break;
                 }

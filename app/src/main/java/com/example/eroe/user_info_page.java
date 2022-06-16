@@ -16,11 +16,11 @@ import com.example.namespace.R;
 public class user_info_page extends AppCompatActivity {
 
     ImageButton logo_bt, notice_bt, profile_bt, menu_bt, photo_bt;
-    Button bt1, bt2, bt3, bt4;
+    Button bt1, bt2;
     TextView parent_txt, txt1, txt2, txt3, txt4;
-    ImageView iv1, iv2;
+    ImageView iv1;
     View.OnClickListener cl;
-    Intent i, j, k, l, m, n, o, p;
+    Intent i, j, k, l, m, n;
 
 
     @Override
@@ -58,7 +58,7 @@ public class user_info_page extends AppCompatActivity {
                         startActivity(j);
                         break;
                     case R.id.profile_bt:
-                        k = new Intent(getApplicationContext(), my_page.class);
+                        k = new Intent(getApplicationContext(), user_info_page.class);
                         startActivity(k);
                         break;
                     case R.id.menu_bt:
@@ -70,7 +70,7 @@ public class user_info_page extends AppCompatActivity {
                         startActivity(m);
                         break;
                     case R.id.button2:
-                        n = new Intent(getApplicationContext(), setting_page.class);
+                        n = new Intent(getApplicationContext(), user_info_modify_page.class);
                         startActivity(n);
                         break;
 
