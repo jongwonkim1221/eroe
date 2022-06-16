@@ -8,15 +8,15 @@
 
 
     <ImageButton
-        android:id="@+id/menu_bt2"
+        android:id="@+id/menu_bt"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:background="@android:color/transparent"
         android:scaleType="centerInside"
-        app:layout_constraintBottom_toBottomOf="@+id/logo_bt2"
-        app:layout_constraintEnd_toStartOf="@+id/logo_bt2"
+        app:layout_constraintBottom_toBottomOf="@+id/logo_bt"
+        app:layout_constraintEnd_toStartOf="@+id/logo_bt"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -24,7 +24,7 @@
         app:srcCompat="@drawable/menu" />
 
     <ImageButton
-        android:id="@+id/logo_bt2"
+        android:id="@+id/logo_bt"
         android:layout_width="119dp"
         android:layout_height="58dp"
         android:background="@android:color/transparent"
@@ -38,34 +38,34 @@
         tools:ignore="MissingConstraints" />
 
     <ImageButton
-        android:id="@+id/notice_bt2"
+        android:id="@+id/notice_bt"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="56dp"
         android:background="@android:color/transparent"
         android:scaleType="centerInside"
-        app:layout_constraintBottom_toBottomOf="@+id/logo_bt2"
+        app:layout_constraintBottom_toBottomOf="@+id/logo_bt"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/logo_bt2"
+        app:layout_constraintStart_toEndOf="@+id/logo_bt"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/notice"
         tools:ignore="MissingConstraints" />
 
     <ImageButton
-        android:id="@+id/profile_bt2"
+        android:id="@+id/profile_bt"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:background="@android:color/transparent"
         android:scaleType="centerInside"
-        app:layout_constraintBottom_toBottomOf="@+id/logo_bt2"
+        app:layout_constraintBottom_toBottomOf="@+id/logo_bt"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/notice_bt2"
+        app:layout_constraintStart_toEndOf="@+id/notice_bt"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/profile"
@@ -88,6 +88,7 @@
         android:id="@+id/login_txt"
         android:layout_width="78dp"
         android:layout_height="38dp"
+        android:layout_marginBottom="24dp"
         android:text="로그인"
         android:textColor="@color/black"
         android:textSize="25dp"
@@ -95,23 +96,24 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.048"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logo_bt2"
-        app:layout_constraintVertical_bias="0.294" />
+        app:layout_constraintTop_toBottomOf="@+id/view5"
+        app:layout_constraintVertical_bias="1.0" />
 
-    <TextView
-        android:id="@+id/id_txt"
-        android:layout_width="62dp"
-        android:layout_height="29dp"
-        android:layout_marginBottom="44dp"
-        android:text="아이디"
+    <EditText
+        android:id="@+id/input_pw"
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:background="@drawable/edge"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:text=""
         android:textColor="@color/black"
-        android:textSize="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/password_txt"
+        app:layout_constraintBottom_toTopOf="@+id/login_bt"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.085"
+        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/menu_bt2"
-        app:layout_constraintVertical_bias="0.887" />
+        app:layout_constraintTop_toBottomOf="@+id/view5"
+        app:layout_constraintVertical_bias="0.687" />
 
     <EditText
         android:id="@+id/input_id"
@@ -140,25 +142,23 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.095"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logo_bt2"
+        app:layout_constraintTop_toBottomOf="@+id/logo_bt"
         app:layout_constraintVertical_bias="1.0" />
 
-    <EditText
-        android:id="@+id/input_pw"
-        android:layout_width="350dp"
-        android:layout_height="45dp"
-        android:layout_marginTop="212dp"
-        android:background="@drawable/edge"
-        android:ems="10"
-        android:inputType="textPassword"
-        android:text=""
+    <TextView
+        android:id="@+id/id_txt"
+        android:layout_width="62dp"
+        android:layout_height="29dp"
+        android:layout_marginBottom="44dp"
+        android:text="아이디"
         android:textColor="@color/black"
-        app:layout_constraintBottom_toTopOf="@+id/login_bt"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/password_txt"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintHorizontal_bias="0.085"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view5"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.704" />
 
     <Button
         android:id="@+id/login_bt"
