@@ -54,11 +54,13 @@ public class location extends AppCompatActivity {
 
         ViewGroup mapViewContainer = (ViewGroup) findViewById(R.id.map_view);
         mapViewContainer.addView(mapview);
-
+        mapview.setMapCenterPoint(MapPoint.mapPointWithGeoCoord(37.44798404063856, 127.1692399701177), true);
+        mapview.zoomIn(true);
+        mapview.zoomOut(true);
 
         /*마커 추가*/
         //마커 찍기
-        MapPoint MARKER_POINT1 = MapPoint.mapPointWithGeoCoord(37.5666805, 126.9784147);
+        MapPoint MARKER_POINT1 = MapPoint.mapPointWithGeoCoord(37.44798404063856, 127.1692399701177);
         // 마커 아이콘 추가하는 함수
         MapPOIItem marker1 = new MapPOIItem();
         // 클릭 했을 때 나오는 호출 값
