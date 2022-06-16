@@ -35,15 +35,14 @@ public class user_info_page extends AppCompatActivity {
         menu_bt = (ImageButton) findViewById(R.id.menu_bt);
         photo_bt = (ImageButton) findViewById(R.id.photo_bt);
         iv1 = (ImageView) findViewById(R.id.imageView1);
-        iv2 = (ImageView) findViewById(R.id.imageView2);
+
         txt1 = (TextView) findViewById(R.id.textView1);
         txt2 = (TextView) findViewById(R.id.textView2);
         txt3 = (TextView) findViewById(R.id.textView3);
         txt4 = (TextView) findViewById(R.id.textView4);
         bt1 = (Button) findViewById(R.id.button1);
         bt2 = (Button) findViewById(R.id.button2);
-        bt3 = (Button) findViewById(R.id.button3);
-        bt4 = (Button) findViewById(R.id.button4);
+
         parent_txt = (TextView) findViewById(R.id.parent_txt);
 
         cl = new View.OnClickListener() {
@@ -74,14 +73,7 @@ public class user_info_page extends AppCompatActivity {
                         n = new Intent(getApplicationContext(), setting_page.class);
                         startActivity(n);
                         break;
-                    case R.id.button3:
-                        o = new Intent(getApplicationContext(), location.class);
-                        startActivity(o);
-                        break;
-                    case R.id.button4:
-                        p = new Intent(getApplicationContext(), setting_page.class);
-                        startActivity(p);
-                        break;
+
                 }
             }
         };
@@ -91,7 +83,5 @@ public class user_info_page extends AppCompatActivity {
         menu_bt.setOnClickListener(cl);
         bt1.setOnClickListener(cl);
         bt2.setOnClickListener(cl);
-        bt3.setOnClickListener(cl);
-        bt4.setOnClickListener(cl);
     }
 }
